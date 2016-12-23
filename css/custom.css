@@ -16,16 +16,18 @@
 
 .social-icons {
     
-    position: fixed;
-    bottom: 0px;
+    position: relative;
+    top: 325px;
+    margin-bottom: 50px;
 }
 
 .social-icons li {
     display: inline;
-    text-decoration: none;
-    color: white;
 }
 
+.social {
+    padding-right: 20px;
+}
 
 /* Profile pic */
 
@@ -33,16 +35,11 @@
     margin-top: 25px;
 }
 
-.profile a:hover, p:hover {
+.tname p, a:hover {
     color: white;
     text-decoration: none;
 }
 
-.profile-head {
-    position: absolute;
-    top: 120px;
-    left: 13px;
-}
 
 .tname {
     text-decoration: none;
@@ -54,9 +51,26 @@
 }
 
 .top {
-    border-top: 1px solid #111823;
+    border-top: 2px solid #111823;
 }
 
 .sidebar-nav li {
-    border-bottom: 1px solid #111823;
+    border-bottom: 2px solid #111823;
 }
+
+.border {
+    border-left: 2px solid #111823;
+}
+
+.icon {
+    padding-top: 5px;
+    width: 75px;
+    border-right: 2px solid #111823;
+}
+
+.fsize {
+    font-size: 17px;
+}
+
+
+
