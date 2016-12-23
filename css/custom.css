@@ -1,0 +1,62 @@
+/* General */
+
+
+
+/* Navbar and sidebar background color */
+.navbar {
+    background-color: #040d1c;
+}
+
+#sidebar-wrapper {
+    background-color: #040d1c;
+}
+
+
+/* Social Buttons */
+
+.social-icons {
+    
+    position: fixed;
+    bottom: 0px;
+}
+
+.social-icons li {
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Profile pic */
+
+.profile {
+    margin-top: 25px;
+}
+
+.profile a:hover, p:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-head {
+    position: absolute;
+    top: 120px;
+    left: 13px;
+}
+
+.tname {
+    text-decoration: none;
+}
+
+/* sidebar */
+.sidebar-nav {
+    margin-top: 250px;
+}
+
+.top {
+    border-top: 1px solid #111823;
+}
+
+.sidebar-nav li {
+    border-bottom: 1px solid #111823;
+}
