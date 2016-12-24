@@ -17,8 +17,8 @@
 .social-icons {
     
     position: relative;
-    top: 325px;
-    margin-bottom: 50px;
+    top: 305px;
+    margin-bottom: 40px;
 }
 
 .social-icons li {
@@ -26,7 +26,12 @@
 }
 
 .social {
-    padding-right: 20px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+.right-border {
+    border-right: 2px solid #111823;
 }
 
 /* Profile pic */
@@ -47,11 +52,12 @@
 
 /* sidebar */
 .sidebar-nav {
-    margin-top: 250px;
+    margin-top: 270px;
 }
 
 .top {
     border-top: 2px solid #111823;
+    margin-left: -2px;
 }
 
 .sidebar-nav li {
@@ -70,6 +76,19 @@
 
 .fsize {
     font-size: 17px;
+    margin-left: -10px;
+}
+
+
+.menu-icon {
+    position: absolute;
+    left: 15px;
+    top: 3px;
+}
+
+.top-name {
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 

@@ -30,27 +30,26 @@
 
 <body>
     
-
-
-
-
-    <div id="wrapper">
-       
-       <!--     top navbar -->
+    
+     <!--     top navbar -->
         <div class="navbar navbar-inverse navbar-fixed-top text-white" role="navigation">
            <div class="container">
             <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#wrapper">
+               <button type="button" class="navbar-toggle menu-icon" data-toggle="offcanvas" data-target="#wrapper" aria-expanded="false" aria-controls="navbar">
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
                </button>
                
-               <a class="navbar-brand" href="#" >Dr. OP Verma</a>
-<!--               <a href="#" class="nav-right">Admin</a>-->
+               <a class="navbar-brand top-name" href="#" >Dr. OP Verma</a>
             </div>
+            
            </div>
         </div>
+
+
+
+    <div id="wrapper">
         
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -62,6 +61,7 @@
                      <h3 class="tname"><a href="index.html" class="text-muted">Dr. OP Verma</a></h3> 
                      <p class="tname">Head Of Departmant</p>
                      <p class="tname">Computer Science and Engineering</p>
+                     <p class="tname">Delhi Technological University</p>
                  </div>
                   
           </div>
@@ -97,9 +97,9 @@
             
             <div class="social-icons">
                 <ul>
-                    <li><a href="#" class="social"><i class="fa fa-facebook fa-3x"></i></a></li>
-                    <li><a href="#" class="social"><i class="fa fa-twitter fa-3x"></i></a></li>
-                    <li><a href="#" class="social"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                    <li><a href="#" class="social right-border"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#" class="social right-border"><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a href="#" class="social"><i class="fa fa-linkedin fa-2x"></i></a></li>
                 </ul>
             </div> 
         </div>
@@ -113,14 +113,14 @@
                   <!-- Bio -->
                     <div class="bio">
                         <div class="row well"><br>
-                            <div class="col-md-4 col-md-offset-1">
+                            <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
                                 <div class="img">
                                     <img src="image/profile.jpg" class="img img-responsive center-block" width="400px">
                                 </div>
                             </div>
 
 
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1">
 
                                    <h2>Bio</h2>
                                     <hr>
@@ -139,7 +139,7 @@
                     <div class="academic-details">
                        <div class="row well">
 
-                            <div class="col-md-5 col-md-offset-1">
+                            <div class="col-lg-5 col-md-5 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
                                <h3 class="text-center bg-info">Academic Position</h3>
                                <hr>
                                <ul class="academic-dates-details">
@@ -194,7 +194,7 @@
 
                             </div>
 
-                            <div class="col-md-5">
+                            <div class="col-lg-5 col-md-5 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1">
                                <h3 class="text-center bg-info">Education and Training</h3>
                                <hr>
                                <ul class="edu-dates-details">
@@ -245,7 +245,7 @@
                     
                     <div class="honors-awards">
                        <div class="row well">
-                          <div class="col-md-10 col-md-offset-1">
+                          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
                              <div class="text-center">
                                  <h3 class="bg-danger">Honors, Awards and Grants</h3>
                                  <hr>
@@ -329,6 +329,7 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+        
     </script>
 
 </body>
