@@ -1,5 +1,9 @@
 /* General */
-
+.hr {
+    background-color: #222226;
+    height: 1px;
+    margin-bottom: 10px;
+}
 
 
 /* Navbar and sidebar background color */
@@ -90,6 +94,5 @@
     margin-left: 50px;
     margin-top: 5px;
 }
-
 
 
