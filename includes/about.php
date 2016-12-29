@@ -1,4 +1,4 @@
-<div id="about">
+<div id="about" class="animated fadeInRight">
                   <!-- Bio -->
                     <div class="bio">
                         <div class="row well"><br>
