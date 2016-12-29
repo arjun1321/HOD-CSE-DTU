@@ -89,8 +89,8 @@
                                <ul class="edu-dates-details">
                                   <li>
                                       <div class="edu-dates">
-                                         <span>PHD</span>
-                                         <span>1995</span>  
+                                         <span class="degree">PHD</span>
+                                         <span class="year">1995</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
@@ -101,8 +101,8 @@
                                   
                                   <li>
                                       <div class="edu-dates">
-                                         <span>PHD</span>
-                                         <span>1995</span>  
+                                         <span class="degree">PHD</span>
+                                         <span class="year">1995</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
@@ -113,8 +113,8 @@
                                   
                                   <li>
                                       <div class="edu-dates">
-                                         <span>PHD</span>
-                                         <span>1995</span>  
+                                         <span class="degree">PHD</span>
+                                         <span class="year">1995</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
