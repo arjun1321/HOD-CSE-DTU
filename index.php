@@ -71,25 +71,25 @@
                <ul class="sidebar-nav">
                     
                     <li class="top">
-                        <a href="index.html" class="border fsize"><i class="fa fa-user fa-2x pull-left text-muted icon"></i>About</a>
+                        <a href="index.php" class="border fsize"><i class="fa fa-user fa-2x pull-left text-muted icon"></i>About</a>
                     </li>
                     <li>
-                        <a href="#" class="fsize"><i class="fa fa-book fa-2x pull-left text-muted icon"></i>Research</a>
+                        <a href="index.php?p_id=research" class="fsize"><i class="fa fa-book fa-2x pull-left text-muted icon"></i>Research</a>
                     </li>
                     <li>
-                        <a href="#" class="fsize"><i class="fa fa-pencil-square-o fa-2x pull-left text-muted icon"></i>Publications</a>
+                        <a href="index.php?p_id=publications" class="fsize"><i class="fa fa-pencil-square-o fa-2x pull-left text-muted icon"></i>Publications</a>
                     </li>
                     <li>
-                        <a href="#" class="fsize"><i class="fa fa-clock-o fa-2x pull-left text-muted icon"></i>Teaching</a>
+                        <a href="index.php?p_id=teaching" class="fsize"><i class="fa fa-clock-o fa-2x pull-left text-muted icon"></i>Teaching</a>
                     </li>
                     <li>
-                        <a href="#" class="fsize"><i class="fa fa-camera-retro fa-2x pull-left text-muted icon"></i>Events &amp; Gallery</a>
+                        <a href="index.php?p_id=events" class="fsize"><i class="fa fa-camera-retro fa-2x pull-left text-muted icon"></i>Events &amp; Gallery</a>
                     </li>
                     <li>
-                        <a href="#" class="fsize"><i class="fa fa-graduation-cap fa-2x pull-left text-muted icon"></i>Ph.D Scholar</a>
+                        <a href="index.php?p_id=phdscholar" class="fsize"><i class="fa fa-graduation-cap fa-2x pull-left text-muted icon"></i>Ph.D Scholar</a>
                     </li>
                     <li class="last">
-                        <a href="#" class="fsize"><i class="fa fa-phone-square fa-2x pull-left text-muted icon"></i>Contact</a>
+                        <a href="index.php?p_id=contact" class="fsize"><i class="fa fa-phone-square fa-2x pull-left text-muted icon"></i>Contact</a>
                     </li>
                 </ul>
                 
@@ -110,13 +110,36 @@
             <div class="container-fluid">
                 
                 
+              <?php
+                    if(isset($_GET['p_id'])) {
+                        
+                        $p_id = $_GET['p_id'];
+                        if($p_id == 'research') {
+                            include "includes/research.php";
+                            
+                        } else if($p_id == 'publications') {
+                            include "includes/publications.php";
+                            
+                        } else if($p_id == 'teaching') {
+                            include "includes/teaching.php";
+                            
+                        } else if($p_id == 'phdscholar') {
+                            include "includes/phdscholar.php";
+                            
+                        } else if($p_id == 'events') {
+                            include "includes/events.php";
+                        
+                        } else if($p_id == 'contact') {
+                            include "includes/contact.php";
+                            
+                        } else {
+                            include "includes/about.php";
+                        }
+                    } else {
+                        include "includes/about.php";
+                    }
                 
-                
-                
-                
-                
-                
-                
+                ?>
                 
                 
                 
