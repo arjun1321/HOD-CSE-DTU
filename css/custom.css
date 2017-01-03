@@ -44,13 +44,9 @@
     margin-top: 25px;
 }
 
-.tname p, a:hover {
+
+.tname a:hover{
     color: white;
-    text-decoration: none;
-}
-
-
-.tname {
     text-decoration: none;
 }
 
@@ -136,7 +132,7 @@ ul.academic-dates-details {
 }
 
 .content h4 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     margin-top: 0;
 }
@@ -191,11 +187,35 @@ font-size: 13px;
     margin: 0;
 }
 
+.what {
+    font-size: 16px;
+    font-weight: 500
+    margin: 0;
+}
+
+.where {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+}
 
 
+/* Accordion link */
+.accordion-link:link {
+    text-decoration: none;
+}
 
+.accordion-link:active {
+    text-decoration: none;
+}
 
+.accordion-link:visited {
+    text-decoration: none;
+}
 
+.accordion-link:hover {
+    text-decoration: none;
+}
 
 
 
