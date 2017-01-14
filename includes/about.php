@@ -132,6 +132,52 @@
                     
 <br>
                     
+                   <div class="admin-activities">
+                       <div class="row well">
+                          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                             <div class="text-center">
+                                 <h3 class="bg-danger">Administrative Activities (DTU)</h3>
+                                 <div class="hr"></div>
+                             </div> 
+                             
+                             <div class="activities-list">
+                                 <ul>
+                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
+                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
+                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
+                                 </ul>
+                             </div>
+                    
+                          </div>
+                           
+                       </div>
+                        
+                    </div><!-- honor-awards end -->
+                    
+<br>
+                   <div class="honors-awards">
+                       <div class="row well">
+                          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                             <div class="text-center">
+                                 <h3 class="bg-danger">Professional Activities and Honours</h3>
+                                 <div class="hr"></div>
+                             </div> 
+                             
+                             <div class="activities-list">
+                                 <ul>
+                                     <li>Member BOG:GOVT ENGINEERING COLLEGE AZAMGARH (UP)</li>
+                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
+                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
+                                 </ul>
+                             </div>
+                    
+                          </div>
+                           
+                       </div>
+                        
+                    </div><!-- honor-awards end -->
+                    
+                    
                     <div class="honors-awards">
                        <div class="row well">
                           <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
@@ -155,7 +201,7 @@
                                             </div>
                                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                               <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                
                                               </div>
                                             </div>
                                           </div>

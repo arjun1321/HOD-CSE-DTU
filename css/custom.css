@@ -99,7 +99,14 @@ ul.academic-dates-details {
 }
 
 .academic-dates-details li {
+    position: relative;
+    padding: 10px 15px 15px 10px;
+    background-color: #fff;
     margin-bottom: 15px;
+    -webkit-box-shadow: 0px 3px 3px -3px #ccc;
+    box-shadow: 0px 3px 3px -3px #ccc;
+    border-radius: 3px;
+    color: #333;
     
 }
 
@@ -245,6 +252,57 @@ font-size: 13px;
 .thumbnail:hover .caption {
     top:0%;
 }
+
+
+/* Admin Activities */
+
+.activities-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.activities-list ul li {
+    position: relative;
+    padding: 10px 15px 15px 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 3px 3px -3px #ccc;
+    box-shadow: 0px 3px 3px -3px #ccc;
+    border-radius: 3px;
+    color: #333;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
