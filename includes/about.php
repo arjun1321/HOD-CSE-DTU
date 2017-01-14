@@ -98,31 +98,31 @@
                                       
                                       <div class="edu-contents">
                                           <p class="what">Ph.D in Computer Science</p>
-                                          <p class="where">Delhi Technological University</p>
+                                          <p class="where">Delhi University</p>
                                       </div>
                                   </li>
                                   
                                   <li>
                                       <div class="edu-dates">
-                                         <span class="degree">PHD</span>
+                                         <span class="degree">M-TECH</span>
                                          <span class="year">1995</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
-                                          <p class="what">Ph.D in Computer Science</p>
-                                          <p class="where">Delhi Technological University</p>
+                                          <p class="what">M-Tech in Computer Science</p>
+                                          <p class="where">Indian Institute Of Technology, Delhi</p>
                                       </div>
                                   </li>
                                   
                                   <li>
                                       <div class="edu-dates">
-                                         <span class="degree">PHD</span>
+                                         <span class="degree">B.E</span>
                                          <span class="year">1995</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
-                                          <p class="what">Ph.D in Computer Science</p>
-                                          <p class="where">Delhi Technological University</p>
+                                          <p class="what">B.E in Computer Science Engineering</p>
+                                          <p class="where">Malaviya National Institute of Technology, Jaipur</p>
                                       </div>
                                   </li>
                                    

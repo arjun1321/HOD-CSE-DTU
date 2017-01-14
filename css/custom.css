@@ -230,6 +230,7 @@ font-size: 13px;
 }
 
 
+
 /* events and gallery */
 
 .thumbnail {
@@ -279,6 +280,63 @@ font-size: 13px;
     font-size: 18px;
 }
 
+
+/*publication*/
+.paper-list a {
+    color: black;
+}
+
+.paper-title {
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.paper-author {
+    font-size: small;
+    padding-bottom: 3px;
+}
+
+.paper-conference span {
+    background: orange;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 3px 5px;
+    margin-right: 5px;
+}
+
+.paper-conference {
+    margin-bottom: 3px;
+}
+
+.paper-conference .abstract {
+    margin-left: 10px;
+    background-color: aqua;
+}
+
+.paper-link {
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+.paper-link a {
+    position: absolute;
+    width: 80px;
+    right: -10px;
+    bottom: -5px;
+    background-color: aqua;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    
+}
+
+.abstract-title {
+    width: 65px;
+    padding-bottom: 3px;
+    border-bottom: 3px #03cc85 solid;
+}
 
 
 
