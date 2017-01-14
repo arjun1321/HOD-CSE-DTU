@@ -128,3 +128,7 @@
         margin-right: 0;
     }
 }
+
+.fa.pull-left {
+    margin-right: 0px;
+}

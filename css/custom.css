@@ -21,8 +21,9 @@
 .social-icons {
     
     position: relative;
-    top: 305px;
+    top: 330px;
     margin-bottom: 40px;
+    width: 250px;
 }
 
 .social-icons li {
@@ -42,6 +43,7 @@
 
 .profile {
     margin-top: 25px;
+    width: 250px;
 }
 
 
@@ -50,6 +52,9 @@
     text-decoration: none;
 }
 
+.tname {
+    margin-bottom: 5px;
+}
 /* sidebar */
 .sidebar-nav {
     margin-top: 270px;
