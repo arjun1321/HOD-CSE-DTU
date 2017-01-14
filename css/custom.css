@@ -278,6 +278,8 @@ font-size: 13px;
     border-radius: 3px;
     color: #333;
     font-size: 18px;
+    border-left: 6px #03cc85 solid;
+    border-bottom: 2px #03cc85 solid;
 }
 
 
@@ -306,12 +308,17 @@ font-size: 13px;
 }
 
 .paper-conference {
-    margin-bottom: 3px;
+    margin-bottom: 20px;
 }
 
 .paper-conference .abstract {
-    margin-left: 10px;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 3px 5px;
+    width: 80px;
+    margin-right: 5px;
     background-color: aqua;
+    text-align: center;
 }
 
 .paper-link {
