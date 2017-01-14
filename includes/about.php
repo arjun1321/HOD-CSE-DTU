@@ -1,4 +1,7 @@
-<div id="about" class="animated fadeInRight">
+<?php include "db.php"; ?>
+                 
+
+                 <div id="about" class="animated fadeInRight">
                   <!-- Bio -->
                     <div class="bio">
                         <div class="row well"><br>
@@ -143,14 +146,22 @@
                              <div class="activities-list">
                                  <ul>
                                     <?php
-                                        
+                                            $query = "SELECT * FROM activities ORDER BY activity_id DESC ";
+                                            $select_activity_query = mysqli_query($connection, $query);
+                                            if(!$select_activity_query) {
+                                                die("QUERY FAILED " . mysqli_error($connection));
+                                            }
+
+                                            while($row = mysqli_fetch_assoc($select_activity_query)) {
+
+                                                $activity_desc = $row['activity_description'];
+                                                echo "<li>$activity_desc</li>";
+                                                
+                                            }
                                      
                                      ?>
                                     
-                                    
-                                    
-                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
-                                     
+                                   
                                  </ul>
                              </div>
                     
@@ -171,9 +182,21 @@
                              
                              <div class="activities-list">
                                  <ul>
-                                     <li>Member BOG:GOVT ENGINEERING COLLEGE AZAMGARH (UP)</li>
-                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
-                                     <li>Head, Department of Computer Science and Engineering, Jan 2015 onward</li>
+                                     <?php
+                                            $query = "SELECT * FROM honours ORDER BY honours_id DESC ";
+                                            $select_honours_query = mysqli_query($connection, $query);
+                                            if(!$select_honours_query) {
+                                                die("QUERY FAILED " . mysqli_error($connection));
+                                            }
+
+                                            while($row = mysqli_fetch_assoc($select_honours_query)) {
+
+                                                $honours_desc = $row['honours_description'];
+                                                echo "<li>$honours_desc</li>";
+                                                
+                                            }
+                                     
+                                     ?>
                                  </ul>
                              </div>
                     
