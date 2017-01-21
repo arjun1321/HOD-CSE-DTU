@@ -1,3 +1,6 @@
+
+<?php include "db.php"; ?>                
+
 <div id="events-gallery" class="animated fadeInRight">
                     <div class="events-head">
                         <div class="row well">
@@ -13,10 +16,44 @@
                     <div class="down-arrow"></div>
                     <br>
                     
+                    <div class="event-organised">
+                       <div class="row well">
+                          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                             <div class="text-center">
+                                 <h3 class="bg-danger">Event/FDP Organised (DTU)</h3>
+                                 <div class="hr"></div>
+                             </div> 
+                             
+                             <div class="activities-list">
+                                 <ul>
+                                     <?php
+                                            $query = "SELECT * FROM event_org ORDER BY event_org_id DESC ";
+                                            $select_event_org_query = mysqli_query($connection, $query);
+                                            if(!$select_event_org_query) {
+                                                die("QUERY FAILED " . mysqli_error($connection));
+                                            }
+
+                                            while($row = mysqli_fetch_assoc($select_event_org_query)) {
+
+                                                $event_org_details = $row['event_org_details'];
+                                                echo "<li>$event_org_details</li>";
+                                                
+                                            }
+                                     
+                                     ?>
+                                 </ul>
+                             </div>
+                    
+                          </div>
+                           
+                       </div>
+                        
+                    </div><!-- honor-awards end -->
+                    
                     <div class="events">
                         <div class="row well">
                             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
-                                <h3 class="text-center">Events</h3>
+                                <h3 class="text-center">Events &amp; Gallery</h3>
                                 <div class="hr"></div>
                                 
                                 
