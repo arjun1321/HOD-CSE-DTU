@@ -16,7 +16,7 @@
                             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
                                 <h3 class="text-center">Current teaching</h3>
                                 <div class="hr"></div>
-                                <ul class="current-teaching-details">
+                                <ul class="teaching-details">
                                     <li>
                                        <div class="dates">
                                            <span>Present</span>
@@ -74,7 +74,7 @@
                             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
                                 <h3 class="text-center">Teaching History</h3>
                                 <div class="hr"></div>
-                                <ul class="history-teaching-details">
+                                <ul class="teaching-details">
                                     <li>
                                        <div class="dates">
                                            <span>Present</span>
