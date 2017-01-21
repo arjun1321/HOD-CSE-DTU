@@ -26,6 +26,7 @@
 
                         </div>
                     </div> <!-- Bio End -->
+                    <div class="down-arrow"></div>
 
 <br>
                     <div class="academic-details">

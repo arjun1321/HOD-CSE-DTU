@@ -406,6 +406,17 @@ font-size: 13px;
 }
 
 
+/* Arrow */
+
+.down-arrow {
+	padding: 15px 0;
+    width: 30px;
+    margin: -20px auto;
+    border-top: 30px solid #dee1e5;
+	border-right: 50px solid transparent;
+	border-bottom: 0 solid transparent;
+	border-left: 50px solid transparent;
+}
 
 
 

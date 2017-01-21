@@ -10,6 +10,8 @@
                             </div>
                         </div>
                     </div>
+                    <div class="down-arrow"></div>
+                    <br>
                     
                     <div class="current-teaching">
                         <div class="row well">
