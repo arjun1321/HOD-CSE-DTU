@@ -61,48 +61,40 @@
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
                                         <div class="thumbnail">
                                             <div class="caption">
-                                                <h4>Thumbnail Headline</h4>
-                                                <p>short thumbnail description</p>
-                                                <p><a href="" class="label label-danger">Zoom</a>
-                                                <a href="" class="label label-default">Download</a></p>
+                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
+                                                <p><a href="" class="btn btn-danger">View</a></p>
                                             </div>
-                                            <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px;">
                                         </div>
                                     </div>
                                 
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
                                         <div class="thumbnail">
                                             <div class="caption">
-                                                <h4>Thumbnail Headline</h4>
-                                                <p>short thumbnail description</p>
-                                                <p><a href="" class="label label-danger">Zoom</a>
-                                                <a href="" class="label label-default">Download</a></p>
+                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
+                                                <p><a href="" class="btn btn-danger">View</a></p>                                              
                                             </div>
-                                            <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px">
                                         </div>
                                     </div>
                                     
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
                                         <div class="thumbnail">
                                             <div class="caption">
-                                                <h4>Thumbnail Headline</h4>
-                                                <p>short thumbnail description</p>
-                                                <p><a href="" class="label label-danger">Zoom</a>
-                                                <a href="" class="label label-default">Download</a></p>
+                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
+                                                <p><a href="" class="btn btn-danger">View</a></p>
                                             </div>
-                                            <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px">
                                         </div>
                                     </div>
                                     
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
                                         <div class="thumbnail">
                                             <div class="caption">
-                                                <h4>Thumbnail Headline</h4>
-                                                <p>short thumbnail description</p>
-                                                <p><a href="" class="label label-danger">Zoom</a>
-                                                <a href="" class="label label-default">Download</a></p>
+                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
+                                                <p><a href="" class="btn btn-danger">View</a></p>
                                             </div>
-                                            <img src="http://lorempixel.com/400/300/sports/1/" alt="...">
+                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px">
                                         </div>
                                     </div>
             

@@ -10,7 +10,5 @@
                             </div>
                         </div>
                         
-                        <div class="down-arrow"></div>
-                        <br>
                     
 </div>
