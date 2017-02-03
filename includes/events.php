@@ -64,7 +64,7 @@
                                                 <h3>Thumbnail Headline Thumbnail Headline</h3>
                                                 <p><a href="" class="btn btn-danger">View</a></p>
                                             </div>
-                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px;">
+                                            <img src="image/img1.jpg" alt="..." style="max-height: 300px; max-width: 400px;">
                                         </div>
                                     </div>
                                 
@@ -74,7 +74,7 @@
                                                 <h3>Thumbnail Headline Thumbnail Headline</h3>
                                                 <p><a href="" class="btn btn-danger">View</a></p>                                              
                                             </div>
-                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px">
+                                            <img src="image/img2.jpg" alt="..." style="max-height: 300px; max-width: 400px">
                                         </div>
                                     </div>
                                     
@@ -84,7 +84,7 @@
                                                 <h3>Thumbnail Headline Thumbnail Headline</h3>
                                                 <p><a href="" class="btn btn-danger">View</a></p>
                                             </div>
-                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px">
+                                            <img src="image/img3.jpg" alt="..." style="max-height: 300px; max-width: 400px">
                                         </div>
                                     </div>
                                     
@@ -94,7 +94,7 @@
                                                 <h3>Thumbnail Headline Thumbnail Headline</h3>
                                                 <p><a href="" class="btn btn-danger">View</a></p>
                                             </div>
-                                            <img src="image/profile.jpg" alt="..." style="max-height: 300px; max-width: 400px">
+                                            <img src="image/img4.jpg" alt="..." style="max-height: 300px; max-width: 400px">
                                         </div>
                                     </div>
             
