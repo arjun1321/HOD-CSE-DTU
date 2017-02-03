@@ -113,14 +113,23 @@
                 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
+                  <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        <h4 class="modal-title text-primary" id="myModalLabel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae non, iure inventore dolorum temporibus</h4>
                       </div>
                       <div class="modal-body">
-                        ...
+                       <img src="image/img1.jpg" alt="" class="img img-responsive center-block">
+                       <hr>
+                       <div style="margin-bottom: 10px;">
+                            <span class="bg-primary modal-date">Date</span><span class="mod-date text-danger bg-info">12-05-2017</span>
+                            <span class="bg-primary modal-place">Place</span><span class="mod-place text-danger bg-info">Delhi</span>
+                       </div>
+                       <div class="gallery-desc text-danger">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aliquam minima eum et totam cupiditate possimus, tenetur hic unde est, dolor iste, laborum! Quisquam quidem aspernatur cupiditate reprehenderit maxime. Sit!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptas eligendi labore ut mollitia commodi! Reiciendis officia aliquam repellat repellendus labore, eius, asperiores, laboriosam ex omnis perspiciatis possimus doloribus accusamus!
+                       </div>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
