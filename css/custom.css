@@ -426,15 +426,14 @@ font-size: 13px;
     padding: 5px 7px;
     border-radius: 3px;
     font-size: 15px;
-    margin-bottom: 5px;
 }
 
 .modal-place {
     padding: 5px 7px;
     border-radius: 3px;
     font-size: 15px;
-    margin-bottom: 5px;
 }
+
 
 .mod-date {
     padding: 5px 7px;
@@ -442,7 +441,7 @@ font-size: 13px;
     margin-left: 3px;
     margin-right: 3px;
     border-radius: 3px;
-    margin-bottom: 5px;
+    width: 100px;
 }
 
 .mod-place {
@@ -450,16 +449,12 @@ font-size: 13px;
     font-size: 15px;
     margin-left: 3px;
     border-radius: 3px;
-    margin-bottom: 5px;
+    width: 100px;
 }
 
 .gallery-desc {
-    border-radius: 3px;
-    padding: 5px 7px;
     font-size: 18px;
 }
-
-
 
 
 
