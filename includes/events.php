@@ -58,50 +58,47 @@
                                 
                                 
                                 <div class="row">
+                                   
+                                   <?php
+                                            $query = "SELECT * FROM gallery ORDER BY gallery_id DESC ";
+                                            $select_gallery_query = mysqli_query($connection, $query);
+                                            if(!$select_gallery_query) {
+                                                die("QUERY FAILED " . mysqli_error($connection));
+                                            }
+
+                                            while($row = mysqli_fetch_assoc($select_gallery_query)) {
+
+                                                $gallery_id = $row['gallery_id'];
+                                                $gallery_title = $row['gallery_title'];
+                                                $gallery_image = $row['gallery_image'];
+                                                $gallery_date = $row['gallery_date'];
+                                                $gallery_place = $row['gallery_place'];
+                                                $gallery_description = $row['gallery_description'];
+                                                
+                                           ?>     
+                                           
+                                   
+                                   
+                                   
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
                                         <div class="thumbnail">
                                             <div class="caption">
-                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
+                                                <h3><?php echo $gallery_title; ?></h3>
                                                 <p>        
-                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal<?php echo $gallery_id; ?>">
                                                   View
                                                 </button></p>
                                            </div>
-                                            <img src="image/img1.jpg" alt="..." class="img img-responsive">  
+                                            <img src="image/<?php echo $gallery_image; ?>" alt="..." class="img img-responsive">  
                                             
                                         </div>
                                         
                                     </div>
-                                
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
-                                        <div class="thumbnail">
-                                            <div class="caption">
-                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
-                                                <p><a href="" class="btn btn-danger">View</a></p>                                              
-                                            </div>
-                                            <img src="image/img2.jpg" alt="..." class="img img-responsive">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
-                                        <div class="thumbnail">
-                                            <div class="caption">
-                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
-                                                <p><a href="" class="btn btn-danger">View</a></p>
-                                            </div>
-                                            <img src="image/img3.jpg" alt="..." class="img img-responsive">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-xs-12 col-sm-12 col-md-6 col-md-6">            
-                                        <div class="thumbnail">
-                                            <div class="caption">
-                                                <h3>Thumbnail Headline Thumbnail Headline</h3>
-                                                <p><a href="" class="btn btn-danger">View</a></p>
-                                            </div>
-                                            <img src="image/img4.jpg" alt="..." class="img img-responsive">
-                                        </div>
-                                    </div>
+                               
+                                    <?php
+                                     }
+
+                                    ?>
             
                                 </div>
                              </div>
@@ -112,23 +109,41 @@
                 </div><!-- event end -->
                 
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                
+                <?php
+                    $query = "SELECT * FROM gallery ORDER BY gallery_id DESC ";
+                    $select_gallery_query = mysqli_query($connection, $query);
+                    if(!$select_gallery_query) {
+                        die("QUERY FAILED " . mysqli_error($connection));
+                    }
+
+                    while($row = mysqli_fetch_assoc($select_gallery_query)) {
+
+                        $gallery_id = $row['gallery_id'];
+                        $gallery_title = $row['gallery_title'];
+                        $gallery_image = $row['gallery_image'];
+                        $gallery_date = $row['gallery_date'];
+                        $gallery_place = $row['gallery_place'];
+                        $gallery_description = $row['gallery_description'];
+
+                   ?>
+                
+                <div class="modal fade" id="myModal<?php echo $gallery_id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title text-primary" id="myModalLabel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae non, iure inventore dolorum temporibus</h4>
+                        <h4 class="modal-title text-primary" id="myModalLabel"><?php echo $gallery_title; ?></h4>
                       </div>
                       <div class="modal-body">
-                       <img src="image/img1.jpg" alt="" class="img img-responsive center-block">
+                       <img src="image/<?php echo $gallery_image; ?>" alt="" class="img img-responsive center-block">
                        <hr>
                        <div style="margin-bottom: 10px;">
-                            <span class="bg-primary modal-date">Date</span><span class="mod-date text-danger bg-info">12-05-2017</span>
-                            <span class="bg-primary modal-place">Place</span><span class="mod-place text-danger bg-info">Delhi</span>
+                            <span class="bg-primary modal-date">Date</span><span class="mod-date text-danger bg-info"><?php echo $gallery_date; ?></span>
+                            <span class="bg-primary modal-place">Place</span><span class="mod-place text-danger bg-info"><?php echo $gallery_place; ?></span>
                        </div>
                        <div class="gallery-desc text-danger">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aliquam minima eum et totam cupiditate possimus, tenetur hic unde est, dolor iste, laborum! Quisquam quidem aspernatur cupiditate reprehenderit maxime. Sit!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptas eligendi labore ut mollitia commodi! Reiciendis officia aliquam repellat repellendus labore, eius, asperiores, laboriosam ex omnis perspiciatis possimus doloribus accusamus!
+                           <?php echo $gallery_description; ?>
                        </div>
                       </div>
                       <div class="modal-footer">
@@ -138,5 +153,8 @@
                   </div>
                 </div>
                 
-                
-               
+                 <?php
+                     }
+
+                    ?>
+                              
