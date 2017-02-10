@@ -18,7 +18,7 @@
                         
                     <!--   <footer    -->
                     <div class="footer">
-                        <div style="width: 200px; margin: 0 auto;">Developer <a href="https://in.linkedin.com/in/arjun-kumar-23ab98121">Arjun Kumar</a> <span> | </span> <a href="login.php">Admin</a></div>
+                        <div style="width: 200px; margin: 0 auto;">Developer <a href="https://in.linkedin.com/in/arjun-kumar-23ab98121" target="_blank">Arjun Kumar</a> <span> | </span> <a href="login.php">Admin</a></div>
                     </div
                         
                     

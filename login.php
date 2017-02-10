@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Magical Login Form Flat Responsive Widget Template :: w3layouts</title>
+<title>login - op verma</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Magical Login Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="opverma, dtu, dtu opverma, hod, hod dtu, dtu hod, hod op verma, Dr. op verma, Delhi Technological University, Computer Department, DTU"> 
+<script>
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
 <!-- Custom Theme files -->
 <link href="css/login.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //Custom Theme files -->
@@ -17,32 +19,19 @@
 <body>
 	<!-- main -->
 	<div class="main-w3layouts wrapper">
-		<h1>Magical Login Form</h1>
+		<h1>Admin Login</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top"> 
 				<form action="#" method="post"> 
 					<input class="text" type="text" name="Username" placeholder="Username" required="">
-					<input class="text" type="password" name="password" placeholder="Password" required="">
-					<div class="wthree-text"> 
-						<ul> 
-							<li>
-								<label class="anim">
-									<input type="checkbox" class="checkbox" required="">
-									<span> Remember me ?</span> 
-								</label> 
-							</li>
-							<li><a href="#">Forgot password?</a> </li>
-						</ul>
-						<div class="clear"> </div>
-					</div>   
+					<input class="text" type="password" name="password" placeholder="Password" required="">   
 					<input type="submit" value="LOGIN">
 				</form>
-				<p>Don't have an Account? <a href="#"> Signup Now!</a></p>
 			</div>	 
 		</div>	
 		<!-- copyright -->
 		<div class="w3copyright-agile">
-			<p>© 2017 Magical Login Form . All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+			<p>Developer <a href="https://in.linkedin.com/in/arjun-kumar-23ab98121">Arjun Kumar</a> | <a href="index.php">Home</a></p>
 		</div>
 		<!-- //copyright -->
 		<ul class="w3lsg-bubbles">
