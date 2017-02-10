@@ -14,5 +14,12 @@
                         <br>
                         
                         
+                        
+                        
+                    <!--   <footer    -->
+                    <div class="footer">
+                        <div style="width: 200px; margin: 0 auto;">Developer <a href="">Arjun Kumar</a> <span> | </span> <a href="">Admin</a></div>
+                    </div
+                        
                     
 </div>
