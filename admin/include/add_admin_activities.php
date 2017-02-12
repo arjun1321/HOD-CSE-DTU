@@ -17,6 +17,8 @@
             die("QUERY FAILED: " . mysqli_error($connection));
         }
         
+        header("Location: administrative_activities.php");
+        
     }
 ?> 
   

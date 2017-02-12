@@ -13,7 +13,7 @@
                                
 <?php
     
-    $query = "SELECT * FROM activities" ;
+    $query = "SELECT * FROM activities ORDER BY activity_id DESC " ;
     $select_activity = mysqli_query($connection, $query);
                                 
      while($row = mysqli_fetch_assoc($select_activity)) {
@@ -25,9 +25,9 @@
     echo "<td>$activity_id</td>";
     echo "<td>$activity_description</td>";
 
-    echo "<td><a href='index.php?source=activities&edit=$activity_id'>Edit</a></td>";
+    echo "<td><a href='administrative_activities.php?p_id=edit_admin_activities&a_id=$activity_id'>Edit</a></td>";
           
-    echo "<td><a href='index.php?delete=$activity_id'>Delete</a></td>";
+    echo "<td><a href='administrative_activities.php?delete=$activity_id'>Delete</a></td>";
     echo "</tr>";
 
   }
@@ -44,12 +44,12 @@
 
 if(isset($_GET['delete'])) {
     
-    $the_comment_id = $_GET['delete'];
+    $the_activity_id = $_GET['delete'];
     
-    $query = "DELETE FROM comments WHERE comment_id = {$the_comment_id}";
+    $query = "DELETE FROM activities WHERE activity_id = {$the_activity_id}";
     $delete_query = mysqli_query($connection, $query);
     
-    header("Location: comments.php");
+    header("Location: administrative_activities.php");
 }
 ?>                    
                      

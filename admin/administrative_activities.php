@@ -1,4 +1,6 @@
-<?php include "../includes/db.php" ?>
+<?php include "../includes/db.php";
+      ob_start();
+?>
 
 
 <!DOCTYPE html>
@@ -59,7 +61,7 @@
                 
                 
             </ul>
-            <?php include "include/navigations.php" ?>
+            <?php include "include/navigations.php"; ?>
         </nav>
 
         <div id="page-wrapper">
