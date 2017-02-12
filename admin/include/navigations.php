@@ -6,10 +6,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo">Administrative Activities <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="index.php?p_id=view_admin_activities">View Activities</a>
+                                <a href="administrative_activities.php?p_id=view_admin_activities">View Activities</a>
                             </li>
                             <li>
-                                <a href="index.php?p_id=add_activities">Add Activities</a>
+                                <a href="administrative_activities.php?p_id=add_admin_activities">Add Activities</a>
                             </li>
                         </ul>
                     </li>
