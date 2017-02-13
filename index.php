@@ -150,6 +150,58 @@
 
     </div>
     <!-- /#wrapper -->
+    
+    
+     <!-- Modal -->
+                
+                <?php
+                    $query = "SELECT * FROM gallery ORDER BY gallery_id DESC ";
+                    $select_gallery_query = mysqli_query($connection, $query);
+                    if(!$select_gallery_query) {
+                        die("QUERY FAILED " . mysqli_error($connection));
+                    }
+
+                    while($row = mysqli_fetch_assoc($select_gallery_query)) {
+
+                        $gallery_id = $row['gallery_id'];
+                        $gallery_title = $row['gallery_title'];
+                        $gallery_image = $row['gallery_image'];
+                        $gallery_date = $row['gallery_date'];
+                        $gallery_place = $row['gallery_place'];
+                        $gallery_description = $row['gallery_description'];
+
+                   ?>
+                
+                <div class="modal fade" id="myModal<?php echo $gallery_id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-primary text-center" id="myModalLabel"><?php echo $gallery_title; ?></h4>
+                      </div>
+                      <div class="modal-body">
+                       <img src="image/<?php echo $gallery_image; ?>" alt="" class="img img-responsive center-block">
+                       <hr>
+                       <div style="margin-bottom: 10px;">
+                            <div class="pull-left" style="margin-bottom: 5px; margin-top: 5px;"><span class="bg-primary modal-date">Date</span><span class="mod-date text-danger bg-info"><?php echo $gallery_date; ?></span></div>
+                            <div class="pull-left" style="margin-top: 5px;"><span class="bg-primary modal-place">Place</span><span class="mod-place text-danger bg-info"><?php echo $gallery_place; ?></span></div>
+                            <div class="clearfix"></div>
+                       </div>
+                       <div class="gallery-desc text-danger">
+                           <?php echo $gallery_description; ?>
+                       </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                 <?php
+                     }
+
+                    ?>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
