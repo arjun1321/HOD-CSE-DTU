@@ -30,10 +30,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo10">Honours &amp; Awards <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo10" class="collapse">
                             <li>
-                                <a href="">View Honours &amp; Awards</a>
+                                <a href="honour_awards.php?p_id=view_honour_awards">View Honours &amp; Awards</a>
                             </li>
                             <li>
-                                <a href="#">Add Honours &amp; Awards</a>
+                                <a href="honour_awards.php?p_id=add_honour_awards">Add Honours &amp; Awards</a>
                             </li>
                         </ul>
                     </li>
