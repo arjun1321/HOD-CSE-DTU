@@ -42,10 +42,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo5">Event Organised <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo5" class="collapse">
                             <li>
-                                <a href="#">View Event</a>
+                                <a href="event_organised.php?p_id=view_event_organised">View Event</a>
                             </li>
                             <li>
-                                <a href="#">Add Event</a>
+                                <a href="event_organised.php?p_id=add_event_organised">Add Event</a>
                             </li>
                         </ul>
                     </li>
