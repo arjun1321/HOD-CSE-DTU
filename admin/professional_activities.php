@@ -1,4 +1,6 @@
-<?php include "../includes/db.php" ?>
+<?php include "../includes/db.php";
+        ob_start();
+?>
 
 
 <!DOCTYPE html>
@@ -79,33 +81,29 @@
 
 
                     <?php
-                    if(isset($_GET['p_id'])) {
-                        
-                        $p_id = $_GET['p_id'];
-                        if($p_id == 'view_admin_activities') {
-                            include "include/view_admin_activities.php";
-                            
-                        } else if($p_id == 'publications') {
-                            include "includes/publications.php";
-                            
-                        } else if($p_id == 'teaching') {
-                            include "includes/teaching.php";
-                            
-                        } else if($p_id == 'phdscholar') {
-                            include "includes/phdscholar.php";
-                            
-                        } else if($p_id == 'events') {
-                            include "includes/events.php";
-                        
-                        } else if($p_id == 'contact') {
-                            include "includes/contact.php";
-                            
-                        } else {
-                            include "includes/about.php";
-                        }
-                    } else {
-                        include "include/view_admin_activities.php";
-                    }
+                     if(isset($_GET['p_id'])) {
+                                
+                                $source = $_GET['p_id'];
+                            } else {
+                                $source = '';
+                            }
+
+                            switch($source) {
+                                    
+                                case 'add_prof_activities':
+                                    include "include/add_prof_activities.php";
+                                    break;
+                                case 'view_prof_activities':
+                                    include "include/view_prof_activities.php";
+                                    break;
+                                    
+                                case 'edit_prof_activities':
+                                    include "include/edit_prof_activities.php";
+                                    break;
+                                    
+                                default:
+                                    include "include/view_prof_activities.php";
+                            }
                 
                 ?>
                     

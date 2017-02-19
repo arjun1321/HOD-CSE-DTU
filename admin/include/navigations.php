@@ -18,17 +18,17 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo4">Professional Activities <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo4" class="collapse">
                             <li>
-                                <a href="">View Professional Activities</a>
+                                <a href="professional_activities.php?p_id=view_prof_activities">View Professional Activities</a>
                             </li>
                             <li>
-                                <a href="#">Add Professional Activities</a>
+                                <a href="professional_activities.php?p_id=add_prof_activities">Add Professional Activities</a>
                             </li>
                         </ul>
                     </li>
                     
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4">Honours &amp; Awards <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo4" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo10">Honours &amp; Awards <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo10" class="collapse">
                             <li>
                                 <a href="">View Honours &amp; Awards</a>
                             </li>
