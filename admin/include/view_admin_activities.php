@@ -1,3 +1,4 @@
+<h4>View Administrative Activities</h4>
 <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>

@@ -47,7 +47,7 @@ if(isset($_GET['a_id'])) {
 <!--   enctype is used form multiple form data like chossing image file -->
     
     <div class="form-group">
-        <label for="activity_content">Activity Description</label>
+        <label for="activity_content">Edit Administrative Activity Description</label>
         <textarea name="activity_content" id="" cols="30" rows="10" class="form-control"><?php echo $activity_description; ?></textarea>
     </div>
     

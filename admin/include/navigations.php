@@ -6,10 +6,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo">Administrative Activities <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="administrative_activities.php?p_id=view_admin_activities">View Activities</a>
+                                <a href="administrative_activities.php?p_id=view_admin_activities">View Administrative Activities</a>
                             </li>
                             <li>
-                                <a href="administrative_activities.php?p_id=add_admin_activities">Add Activities</a>
+                                <a href="administrative_activities.php?p_id=add_admin_activities">Add Administrative Activities</a>
                             </li>
                         </ul>
                     </li>
@@ -18,10 +18,22 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo4">Professional Activities <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo4" class="collapse">
                             <li>
-                                <a href="">View Activities</a>
+                                <a href="">View Professional Activities</a>
                             </li>
                             <li>
-                                <a href="#">Add Activities</a>
+                                <a href="#">Add Professional Activities</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4">Honours &amp; Awards <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo4" class="collapse">
+                            <li>
+                                <a href="">View Honours &amp; Awards</a>
+                            </li>
+                            <li>
+                                <a href="#">Add Honours &amp; Awards</a>
                             </li>
                         </ul>
                     </li>
