@@ -54,10 +54,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo1"> Publications <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo1" class="collapse">
                             <li>
-                                <a href="#">View All Publications</a>
+                                <a href="publications.php?p_id=view_publication">View All Publications</a>
                             </li>
                             <li>
-                                <a href="#">Add Publications</a>
+                                <a href="publications.php?p_id=add_publication">Add Publications</a>
                             </li>
                         </ul>
                     </li>
