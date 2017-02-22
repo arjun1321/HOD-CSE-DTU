@@ -2,21 +2,19 @@
 
 if(isset($_GET['a_id'])) {
     
-    $the_paper_id = $_GET['a_id'];
+    $the_gallery_id = $_GET['a_id'];
 }
-     $query = "SELECT * FROM papers WHERE paper_id = $the_paper_id " ;
-     $select_paper_by_id = mysqli_query($connection, $query);
+     $query = "SELECT * FROM gallery WHERE gallery_id = $the_gallery_id " ;
+     $select_gallery_by_id = mysqli_query($connection, $query);
                                 
-     while($row = mysqli_fetch_assoc($select_paper_by_id)) {
+     while($row = mysqli_fetch_assoc($select_gallery_by_id)) {
                         
-        $paper_id = $row['paper_id'];
-        $paper_title = $row['paper_title'];
-        $paper_author = $row['paper_author'];
-        $paper_journal = $row['paper_journal'];
-        $paper_link = $row['paper_link'];
-        $paper_type = $row['paper_type'];
-        $paper_date = $row['paper_date'];
-        $paper_abstract = $row['paper_abstract'];
+        $gallery_id = $row['gallery_id'];
+        $gallery_title = $row['gallery_title'];
+        $gallery_image = $row['gallery_image'];
+        $gallery_date = $row['gallery_date'];
+        $gallery_place = $row['gallery_place'];
+        $gallery_description = $row['gallery_description'];
      }  
 
   
@@ -25,36 +23,65 @@ if(isset($_GET['a_id'])) {
   
   <?php
 
-    if(isset($_POST['update_publication'])) {
+    if(isset($_POST['update_gallery'])) {
         
-        $paper_title = $_POST['paper_title'];
-        $paper_author = $_POST['paper_author'];
-        $paper_journal = $_POST['paper_journal'];
-        $paper_link = $_POST['paper_link'];
-        $paper_type = $_POST['paper_type'];
-        $paper_date = $_POST['paper_date'];
-        $paper_abstract = $_POST['paper_abstract'];
+        $gallery_title = $_POST['gallery_title'];
+        
+        // uploading image
+    
+        if(isset($_FILES['gallery_image'])){
+      $errors= array();
+      $file_name = $_FILES['gallery_image']['name'];
+      $file_size = $_FILES['gallery_image']['size'];
+      $file_tmp = $_FILES['gallery_image']['tmp_name'];
+      $file_type = $_FILES['gallery_image']['type'];
+      $file_ext=strtolower(end(explode('.',$_FILES['gallery_image']['name'])));
+      
+      $expensions= array("jpeg","jpg","png");
+      
+      if(in_array($file_ext,$expensions)=== false){
+         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
+      }
+      
+      if($file_size > 2097152) {
+         $errors[]='File size must be excately 2 MB';
+      }
+      
+      if(empty($errors)==true) {
+         move_uploaded_file($file_tmp,"../image/".$file_name);
+         echo "Success";
+      }else{
+         print_r($errors);
+      }
+   } 
+        
+        // uploading image script complete
+        
+        
+   
+        $gallery_date = $_POST['gallery_date'];
+        $gallery_place = $_POST['gallery_place'];
+        $gallery_description = $_POST['gallery_description'];
         
 
-        $query = "UPDATE papers SET ";
+        $query = "UPDATE gallery SET ";
         
-        $query .= "paper_title = '{$paper_title}', ";
-        $query .= "paper_author = '{$paper_author}', ";
-        $query .= "paper_journal = '{$paper_journal}', ";
-        $query .= "paper_link = '{$paper_link}', ";
-        $query .= "paper_type = '{$paper_type}', ";
-        $query .= "paper_date = '{$paper_date}', ";
-        $query .= "paper_abstract = '{$paper_abstract}' ";
-        $query .= "WHERE paper_id = $the_paper_id; ";
+        $query .= "gallery_title ='{$gallery_title}', ";
+        $query .= "gallery_image ='{$file_name}', ";
+        $query .= "gallery_date ='{$gallery_date}', ";
+        $query .= "gallery_place ='{$gallery_place}', ";
+        $query .= "gallery_description ='{$gallery_description}' ";
+        $query .= "WHERE gallery_id = $the_gallery_id; ";
         
-        $update_paper_query = mysqli_query($connection, $query);
         
-        if(!$update_paper_query) {
+        $update_gallery_query = mysqli_query($connection, $query);
+        
+        if(!$update_gallery_query) {
             
             die("QUERY FAILED: " . mysqli_error($connection));
         }
         
-        header("Location: publications.php");
+        header("Location: event_gallery.php");
         
     }
 ?> 
@@ -63,53 +90,34 @@ if(isset($_GET['a_id'])) {
   <form action="" method="post" enctype="multipart/form-data">
    
 <!--   enctype is used form multiple form data like chossing image file -->
-    <h3>Edit Publication</h3>
-    <div class="form-group">
-        <label for="paper_title">Paper Title</label>
-        <input type="text" value="<?php echo $paper_title; ?>" class="form-control" name="paper_title">
+    <h3>Edit Gallery</h3>
+     <div class="form-group">
+        <label for="gallery_title">Gallery Title</label>
+        <input type="text" class="form-control" name="gallery_title" value="<?php echo $gallery_title; ?>">
     </div>
     
     <div class="form-group">
-        <label for="paper_author">Paper Author</label>
-        <input type="text" value="<?php echo $paper_author; ?>" class="form-control" name="paper_author">
+        <label for="gallery_image">Gallery Image</label><br>
+        <img width="100" src="../image/<?php echo $gallery_image; ?>">
+        <input type="file" name="gallery_image" value="" required>
     </div>
     
     <div class="form-group">
-        <label for="paper_journal">Paper Journal</label>
-        <input type="text" value="<?php echo $paper_journal; ?>" class="form-control" name="paper_journal">
+        <label for="gallery_date">Gallery Date</label>
+        <input type="text" class="form-control" name="gallery_date" value="<?php echo $gallery_date; ?>">
     </div>
     
     <div class="form-group">
-        <label for="paper_link">Paper Link</label>
-        <input type="text" value="<?php echo $paper_link; ?>" class="form-control" name="paper_link">
+        <label for="gallery_place">Gallery Place</label>
+        <input type="text" class="form-control" name="gallery_place" value="<?php echo $gallery_place; ?>">
     </div>
     
     <div class="form-group">
-        <select name="paper_type" id="">
-            <option value='<?php echo $paper_type; ?>'><?php echo $paper_type; ?></option>
-            
-            <?php
-            
-                if($paper_type == 'journal') {
-                    echo "<option value='conference'>Conference</option>";
-                } else {
-                    echo "<option value='journal'>Journal</option>";
-                }
-            ?>
-        </select>
+        <label for="gallery_description">Gallery Description</label>
+        <input type="text" class="form-control" name="gallery_description" value="<?php echo $gallery_description; ?>">
     </div>
     
     <div class="form-group">
-        <label for="paper_date">Paper Date</label>
-        <input type="text" value="<?php echo $paper_date; ?>" class="form-control" name="paper_date">
-    </div>
-    
-    <div class="form-group">
-        <label for="paper_abstract">Paper Abstract</label>
-        <input type="text" value="<?php echo $paper_abstract; ?>" class="form-control" name="paper_abstract">
-    </div>
-    
-    <div class="form-group">
-        <input type="submit" class="btn btn-primary" name="update_publication" value="Update Publication">
+        <input type="submit" class="btn btn-primary" name="update_gallery" value="Update Gallery">
     </div>
 </form>
