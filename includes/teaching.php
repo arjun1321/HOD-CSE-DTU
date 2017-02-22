@@ -1,4 +1,5 @@
-<div id="teaching" class="animated fadeInRight">
+<?php include "db.php"; ?>
+                   <div id="teaching" class="animated fadeInRight">
                     <div class="teaching-head">
                         <div class="row well">
                             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">

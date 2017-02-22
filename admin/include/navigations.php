@@ -67,10 +67,10 @@
                         <ul id="demo2" class="collapse">
                         
                             <li>
-                                <a href="#">View Gallery</a>
+                                <a href="event_gallery.php?p_id=view_event_gallery">View Gallery</a>
                             </li>
                             <li>
-                                <a href="#">Add Gallery</a>
+                                <a href="event_gallery.php?p_id=add_event_gallery">Add Gallery</a>
                             </li>
                         </ul>
                     </li>

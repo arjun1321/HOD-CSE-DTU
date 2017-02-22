@@ -1,4 +1,4 @@
-
+<?php include "db.php"; ?>
 <div id="research" class="animated fadeInRight">
                 
                         <div class="row well">
