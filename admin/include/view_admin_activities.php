@@ -1,4 +1,5 @@
 <h4>View Administrative Activities</h4>
+<div class="table-responsive">
 <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
@@ -37,7 +38,7 @@
                               
                             </tbody>
                         </table>
-                        
+</div>
                        
 <?php
 

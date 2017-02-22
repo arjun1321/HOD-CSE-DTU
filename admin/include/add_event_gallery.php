@@ -1,29 +1,59 @@
 <?php
 
-    if(isset($_POST['create_publication'])) {
+    if(isset($_POST['create_gallery'])) {
         
-        $paper_title = $_POST['paper_title'];
-        $paper_author = $_POST['paper_author'];
-        $paper_journal = $_POST['paper_journal'];
-        $paper_link = $_POST['paper_link'];
-        $paper_type = $_POST['paper_type'];
-        $paper_date = $_POST['paper_date'];
-        $paper_abstract = $_POST['paper_abstract'];
+        $gallery_title = $_POST['gallery_title'];
+        
+        // uploading image
+    
+        if(isset($_FILES['gallery_image'])){
+      $errors= array();
+      $file_name = $_FILES['gallery_image']['name'];
+      $file_size = $_FILES['gallery_image']['size'];
+      $file_tmp = $_FILES['gallery_image']['tmp_name'];
+      $file_type = $_FILES['gallery_image']['type'];
+      $file_ext=strtolower(end(explode('.',$_FILES['gallery_image']['name'])));
+      
+      $expensions= array("jpeg","jpg","png");
+      
+      if(in_array($file_ext,$expensions)=== false){
+         $errors[]="extension not allowed, please choose a JPEG or PNG file.";
+      }
+      
+      if($file_size > 2097152) {
+         $errors[]='File size must be excately 2 MB';
+      }
+      
+      if(empty($errors)==true) {
+         move_uploaded_file($file_tmp,"../image/".$file_name);
+         echo "Success";
+      }else{
+         print_r($errors);
+      }
+   } 
+        
+        // uploading image script complete
+        
+        
+   
+        $gallery_date = $_POST['gallery_date'];
+        $gallery_place = $_POST['gallery_place'];
+        $gallery_description = $_POST['gallery_description'];
         
 
-        $query = "INSERT INTO papers(paper_title, paper_author, paper_journal, paper_link, paper_type, paper_date, paper_abstract) ";
+        $query = "INSERT INTO gallery(gallery_title, gallery_image, gallery_date, gallery_place, gallery_description) ";
         
-        $query .= "VALUES('{$paper_title}', '{$paper_author}', '{$paper_journal}', '{$paper_link}', '{$paper_type}', '{$paper_date}', '{$paper_abstract}') ";
+        $query .= "VALUES('{$gallery_title}', '{$file_name}', '{$gallery_date}', '{$gallery_place}', '{$gallery_description}') ";
         
         
-        $create_paper_query = mysqli_query($connection, $query);
+        $create_gallery_query = mysqli_query($connection, $query);
         
-        if(!$create_paper_query) {
+        if(!$create_gallery_query) {
             
             die("QUERY FAILED: " . mysqli_error($connection));
         }
         
-        header("Location: publications.php");
+        header("Location: event_gallery.php");
         
     }
 ?> 
@@ -32,45 +62,33 @@
   <form action="" method="post" enctype="multipart/form-data">
    
 <!--   enctype is used form multiple form data like chossing image file -->
-    <h3>Add Publication</h3>
+    <h3>Add Gallery</h3>
     <div class="form-group">
-        <label for="paper_title">Paper Title</label>
-        <input type="text" class="form-control" name="paper_title">
+        <label for="gallery_title">Gallery Title</label>
+        <input type="text" class="form-control" name="gallery_title">
     </div>
     
     <div class="form-group">
-        <label for="paper_author">Paper Author</label>
-        <input type="text" class="form-control" name="paper_author">
+        <label for="gallery_image">Gallery Image</label>
+        <input type="file" name="gallery_image" required>
     </div>
     
     <div class="form-group">
-        <label for="paper_journal">Paper Journal</label>
-        <input type="text" class="form-control" name="paper_journal">
+        <label for="gallery_date">Gallery Date</label>
+        <input type="text" class="form-control" name="gallery_date">
     </div>
     
     <div class="form-group">
-        <label for="paper_link">Paper Link</label>
-        <input type="text" class="form-control" name="paper_link">
+        <label for="gallery_place">Gallery Place</label>
+        <input type="text" class="form-control" name="gallery_place">
     </div>
     
     <div class="form-group">
-        <select name="paper_type" id="">
-            <option value="journal">Journal</option>
-            <option value="conference">Conference</option>
-        </select>
+        <label for="gallery_description">Gallery Description</label>
+        <input type="text" class="form-control" name="gallery_description">
     </div>
     
     <div class="form-group">
-        <label for="paper_date">Paper Date</label>
-        <input type="text" class="form-control" name="paper_date">
-    </div>
-    
-    <div class="form-group">
-        <label for="paper_abstract">Paper Abstract</label>
-        <input type="text" class="form-control" name="paper_abstract">
-    </div>
-    
-    <div class="form-group">
-        <input type="submit" class="btn btn-primary" name="create_publication" value="Add Publication">
+        <input type="submit" class="btn btn-primary" name="create_gallery" value="Add Gallery">
     </div>
 </form>

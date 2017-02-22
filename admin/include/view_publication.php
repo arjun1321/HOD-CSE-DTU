@@ -1,4 +1,5 @@
 <h4>View Publications/Published papers</h4>
+<div class="table-responsive">
 <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
@@ -56,8 +57,7 @@
                               
                             </tbody>
                         </table>
-                        
-                       
+</div>
 <?php
 
 
