@@ -1,3 +1,14 @@
+<?php session_start();
+        ob_start();
+?>
+
+<?php
+    if(isset($_SESSION['username'])) {
+        $username = $_SESSION['username'];
+        header("Location: admin/");
+    }
+?>
+
 
 <!DOCTYPE html>
 <html>
@@ -22,10 +33,10 @@
 		<h1>Admin Login</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top"> 
-				<form action="#" method="post"> 
-					<input class="text" type="text" name="Username" placeholder="Username" required="">
+				<form action="includes/admin_login.php" method="post"> 
+					<input class="text" type="text" name="username" placeholder="Username" required="">
 					<input class="text" type="password" name="password" placeholder="Password" required="">   
-					<input type="submit" value="LOGIN">
+					<input type="submit" value="Login" name="login">
 				</form>
 			</div>	 
 		</div>	

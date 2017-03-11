@@ -57,7 +57,7 @@
             <ul class="nav navbar-right top-nav">
                 <li><a href="../index.php">Home</a></li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                    <a href="../includes/admin_logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                 </li>
                 
                 
