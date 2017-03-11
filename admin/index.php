@@ -53,6 +53,8 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
+               
+                <li><a href="../index.php">Home</a></li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                 </li>
