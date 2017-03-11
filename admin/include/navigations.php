@@ -79,10 +79,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo3"> Ph.D Scholar <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo3" class="collapse">
                             <li>
-                                <a href="#">View Ph.D Scholar</a>
+                                <a href="phd_scholar.php?p_id=view_phd_scholar">View Ph.D Scholar</a>
                             </li>
                             <li>
-                                <a href="#">Add Ph.D Scholar</a>
+                                <a href="phd_scholar.php?p_id=add_phd_scholar">Add Ph.D Scholar</a>
                             </li>
                             
                         </ul>

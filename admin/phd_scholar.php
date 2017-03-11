@@ -1,4 +1,6 @@
-<?php include "../includes/db.php" ?>
+<?php include "../includes/db.php";
+        ob_start();
+?>
 
 
 <!DOCTYPE html>
@@ -80,32 +82,28 @@
 
                     <?php
                     if(isset($_GET['p_id'])) {
-                        
-                        $p_id = $_GET['p_id'];
-                        if($p_id == 'view_admin_activities') {
-                            include "include/view_admin_activities.php";
-                            
-                        } else if($p_id == 'publications') {
-                            include "includes/publications.php";
-                            
-                        } else if($p_id == 'teaching') {
-                            include "includes/teaching.php";
-                            
-                        } else if($p_id == 'phdscholar') {
-                            include "includes/phdscholar.php";
-                            
-                        } else if($p_id == 'events') {
-                            include "includes/events.php";
-                        
-                        } else if($p_id == 'contact') {
-                            include "includes/contact.php";
-                            
-                        } else {
-                            include "includes/about.php";
-                        }
-                    } else {
-                        include "include/view_admin_activities.php";
-                    }
+                                
+                                $source = $_GET['p_id'];
+                            } else {
+                                $source = '';
+                            }
+
+                            switch($source) {
+                                    
+                                case 'add_phd_scholar':
+                                    include "include/add_phd_scholar.php";
+                                    break;
+                                case 'view_phd_scholar':
+                                    include "include/view_phd_scholar.php";
+                                    break;
+                                    
+                                case 'edit_phd_scholar':
+                                    include "include/edit_phd_scholar.php";
+                                    break;
+                                    
+                                default:
+                                    include "include/view_phd_scholar.php";
+                            }
                 
                 ?>
                     
