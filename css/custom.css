@@ -457,8 +457,17 @@ font-size: 13px;
 }
 
 
+/*scholar*/
+.scholar {
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
 
-
+.scholar p {
+    margin-bottom: 5px;
+    
+}
 
 
 
