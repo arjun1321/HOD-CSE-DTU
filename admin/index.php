@@ -1,4 +1,4 @@
-<?php include "../includes/db.php" ?>
+<?php include "../includes/db.php"; ?>
 
 
 <!DOCTYPE html>
@@ -80,10 +80,41 @@
                     </div>
                 </div>
                 <!-- /.row -->
+                    <br><br>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="administrative_activities.php" class="btn btn-success">Administrative Activities</a>
+                    </div>
                     
-
-                
-                
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="professional_activities.php" class="btn btn-success">Professional Activities</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="honour_awards.php" class="btn btn-success">Honours &amp; Awards</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="event_organised.php" class="btn btn-success">Event Organised</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="publications.php" class="btn btn-success">Publications</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="event_gallery.php" class="btn btn-success">Events &amp; Gallery</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="phd_scholar.php" class="btn btn-success">Ph.D Scholar</a>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10" style="margin-bottom: 10px;">
+                        <a href="change_password.php" class="btn btn-success">Change Password</a>
+                    </div>
+                </div>
+                <br><br><br>
 
 
             </div>
