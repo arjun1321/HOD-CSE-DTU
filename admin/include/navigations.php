@@ -88,6 +88,8 @@
                         </ul>
                     </li>
                     
+                    <li><a href="change_password.php">Change Password</a></li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
