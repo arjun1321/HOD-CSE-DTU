@@ -42,7 +42,7 @@
 /* Profile pic */
 
 .profile {
-    margin-top: 25px;
+    margin-top: 15px;
     width: 250px;
 }
 
@@ -53,11 +53,11 @@
 }
 
 .tname {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 /* sidebar */
 .sidebar-nav {
-    margin-top: 270px;
+    margin-top: 225px;
 }
 
 .top {
@@ -80,8 +80,7 @@
 }
 
 .fsize {
-    font-size: 17px;
-    margin-left: -10px;
+    font-size: 15px;
 }
 
 

@@ -43,7 +43,7 @@
                  <span class="icon-bar"></span>
                </button>
                
-               <a class="navbar-brand top-name" href="#" >Dr. OP Verma</a>
+               <a class="navbar-brand top-name" href="index.php" >Dr. OP Verma</a>
             </div>
             
            </div>
@@ -60,7 +60,7 @@
                  <img src="image/profile.jpg" alt="Dr. OP Verma" class="img img-responsive center-block img-circle" width="100px">
                  
                  <div class="profile-head">
-                     <h3 class="tname"><a href="index.html" class="text-muted">Dr. OP Verma</a></h3> 
+                     <h3 class="tname" style="margin-top: 5px;"><a href="index.php" class="text-muted">Dr. OP Verma</a></h3> 
                      <p class="tname">Head Of Departmant</p>
                      <p class="tname">Computer Science and Engineering</p>
                      <p class="tname">Delhi Technological University</p>
@@ -79,14 +79,14 @@
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo1" class="fsize">Activities <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo1" class="collapse" style="list-style-type: none;">
-                            <li>
+                            <li style="margin-left: -15px; border: none;">
                                 <a href="index.php?p_id=admin_activities" class="fsize" class="fsize">Administrative Activities</a>
                             </li>
-                            <li>
+                            <li style="margin-left: -15px; border: none;">
                                 <a href="index.php?p_id=prof_activities" class="fsize">Professional Activities</a>
                             </li>
                             
-                            <li>
+                            <li style="margin-left: -15px; border: none;">
                                 <a href="index.php?p_id=honours_awards" class="fsize">Honours &amp; Awards</a>
                             </li>
                         </ul>
@@ -99,10 +99,10 @@
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo" class="fsize">Publications <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse" style="list-style-type: none;">
-                            <li>
+                            <li style="margin-left: -15px; border: none;">
                                 <a href="index.php?p_id=journals" class="fsize" class="fsize">Journals</a>
                             </li>
-                            <li>
+                            <li style="margin-left: -15px; border: none;">
                                 <a href="index.php?p_id=conferences" class="fsize">Conferences</a>
                             </li>
                         </ul>
@@ -114,10 +114,10 @@
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo2" class="fsize">Events &amp; Gallery <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo2" class="collapse" style="list-style-type: none;">
-                            <li>
+                            <li style="margin-left: -15px; border: none;">
                                 <a href="index.php?p_id=events" class="fsize" class="fsize">Events</a>
                             </li>
-                            <li>
+                            <li style="margin-left: -15px; border: none;">
                                 <a href="index.php?p_id=gallery" class="fsize">Gallery</a>
                             </li>
                         </ul>
@@ -128,17 +128,14 @@
                     <li class="last">
                         <a href="index.php?p_id=contact" class="fsize">Contact</a>
                     </li>
+                    
                 </ul>
+                
+                
                 
             </div>
             
-            <div class="social-icons">
-                <ul>
-                    <li><a href="#" class="social right-border"><i class="fa fa-facebook fa-2x"></i></a></li>
-                    <li><a href="#" class="social right-border"><i class="fa fa-twitter fa-2x"></i></a></li>
-                    <li><a href="#" class="social"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                </ul>
-            </div> 
+            
         </div>
         <!-- /#sidebar-wrapper -->
 
