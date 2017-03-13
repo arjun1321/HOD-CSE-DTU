@@ -469,5 +469,19 @@ font-size: 13px;
     
 }
 
+.social-media ul {
+    list-style-type: none;
+    padding: 2px;
+}
 
+.social-media ul li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 2px;
+    padding: 5px;
+}
+
+.social-media ul li a {
+    padding: 5px;
+}
 
