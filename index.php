@@ -100,10 +100,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo" class="fsize">Publications <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse" style="list-style-type: none;">
                             <li style="margin-left: -15px; border: none;">
-                                <a href="index.php?p_id=journals" class="fsize" class="fsize">Journals</a>
+                                <a href="index.php?p_id=journals" class="fsize" class="fsize">International Journals</a>
                             </li>
                             <li style="margin-left: -15px; border: none;">
-                                <a href="index.php?p_id=conferences" class="fsize">Conferences</a>
+                                <a href="index.php?p_id=conferences" class="fsize">International Conferences</a>
                             </li>
                         </ul>
                     </li>
