@@ -75,13 +75,30 @@
                     <li class="top">
                         <a href="index.php" class="border fsize">About</a>
                     </li>
+                    
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1" class="fsize">Activities <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse" style="list-style-type: none;">
+                            <li>
+                                <a href="index.php?p_id=admin_activities" class="fsize" class="fsize">Administrative Activities</a>
+                            </li>
+                            <li>
+                                <a href="index.php?p_id=prof_activities" class="fsize">Professional Activities</a>
+                            </li>
+                            
+                            <li>
+                                <a href="index.php?p_id=honours_awards" class="fsize">Honours &amp; Awards</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
                     <li>
                         <a href="index.php?p_id=research" class="fsize">Research</a>
                     </li>
                     
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo" class="fsize">Publications <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
+                        <ul id="demo" class="collapse" style="list-style-type: none;">
                             <li>
                                 <a href="index.php?p_id=journals" class="fsize" class="fsize">Journals</a>
                             </li>
@@ -91,13 +108,19 @@
                         </ul>
                     </li>
 
-                   <li><a href="index.php?p_id=publications" class="fsize">Publications</a></li>
-
                     <li>
                         <a href="index.php?p_id=teaching" class="fsize">Teaching</a>
                     </li>
                     <li>
-                        <a href="index.php?p_id=events" class="fsize">Events &amp; Gallery</a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2" class="fsize">Events &amp; Gallery <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse" style="list-style-type: none;">
+                            <li>
+                                <a href="index.php?p_id=events" class="fsize" class="fsize">Events</a>
+                            </li>
+                            <li>
+                                <a href="index.php?p_id=gallery" class="fsize">Gallery</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="index.php?p_id=phdscholar" class="fsize">Ph.D Scholar</a>
@@ -145,6 +168,18 @@
                         } else if($p_id == 'events') {
                             include "includes/events.php";
                         
+                        } else if($p_id == 'gallery') {
+                            include "includes/gallery.php";
+                            
+                        } else if($p_id == 'admin_activities') {
+                            include "includes/admin_activities.php";
+                            
+                        } else if($p_id == 'prof_activities') {
+                            include "includes/prof_activities.php";
+                            
+                        } else if($p_id == 'honours_awards') {
+                            include "includes/honours_awards.php";
+                            
                         } else if($p_id == 'contact') {
                             include "includes/contact.php";
                             
