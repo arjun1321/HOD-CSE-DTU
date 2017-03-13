@@ -73,25 +73,37 @@
                <ul class="sidebar-nav">
                     
                     <li class="top">
-                        <a href="index.php" class="border fsize"><i class="fa fa-user fa-2x pull-left text-muted icon"></i>About</a>
+                        <a href="index.php" class="border fsize">About</a>
                     </li>
                     <li>
-                        <a href="index.php?p_id=research" class="fsize"><i class="fa fa-book fa-2x pull-left text-muted icon"></i>Research</a>
+                        <a href="index.php?p_id=research" class="fsize">Research</a>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo" class="fsize">Publications <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="index.php?p_id=journals" class="fsize" class="fsize">Journals</a>
+                            </li>
+                            <li>
+                                <a href="index.php?p_id=conferences" class="fsize">Conferences</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                   <li><a href="index.php?p_id=publications" class="fsize">Publications</a></li>
+
+                    <li>
+                        <a href="index.php?p_id=teaching" class="fsize">Teaching</a>
                     </li>
                     <li>
-                        <a href="index.php?p_id=publications" class="fsize"><i class="fa fa-pencil-square-o fa-2x pull-left text-muted icon"></i>Publications</a>
+                        <a href="index.php?p_id=events" class="fsize">Events &amp; Gallery</a>
                     </li>
                     <li>
-                        <a href="index.php?p_id=teaching" class="fsize"><i class="fa fa-clock-o fa-2x pull-left text-muted icon"></i>Teaching</a>
-                    </li>
-                    <li>
-                        <a href="index.php?p_id=events" class="fsize"><i class="fa fa-camera-retro fa-2x pull-left text-muted icon"></i>Events &amp; Gallery</a>
-                    </li>
-                    <li>
-                        <a href="index.php?p_id=phdscholar" class="fsize"><i class="fa fa-graduation-cap fa-2x pull-left text-muted icon"></i>Ph.D Scholar</a>
+                        <a href="index.php?p_id=phdscholar" class="fsize">Ph.D Scholar</a>
                     </li>
                     <li class="last">
-                        <a href="index.php?p_id=contact" class="fsize"><i class="fa fa-phone-square fa-2x pull-left text-muted icon"></i>Contact</a>
+                        <a href="index.php?p_id=contact" class="fsize">Contact</a>
                     </li>
                 </ul>
                 
@@ -119,9 +131,11 @@
                         if($p_id == 'research') {
                             include "includes/research.php";
                             
-                        } else if($p_id == 'publications') {
-                            include "includes/publications.php";
+                        } else if($p_id == 'journals') {
+                            include "includes/journals.php";
                             
+                        } else if($p_id == 'conferences') {
+                            include "includes/conferences.php";
                         } else if($p_id == 'teaching') {
                             include "includes/teaching.php";
                             
