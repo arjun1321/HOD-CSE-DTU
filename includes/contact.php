@@ -48,6 +48,28 @@
 
                             </div>
                             
+                            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                                <div id="map" style="height: 400px;"></div>
+                                <script>
+                                  function initMap() {
+                                    var uluru = {lat: 28.7500749, lng: 77.1176652};
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                      zoom: 16,
+                                      center: uluru
+                                    });
+                                    var marker = new google.maps.Marker({
+                                      position: uluru,
+                                      map: map
+                                    });
+                                  }
+                                </script>
+                                
+                                <script async defer
+                                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBID9nxDyfddYo-7BZ9QAxGNQk6RYlcqmQ&callback=initMap">
+                                </script>
+                            </div>
+                            
+                            
                         </div>
                                 
                         

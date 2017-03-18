@@ -16,47 +16,7 @@
                      <div class="academic-details">
                        <div class="row well">
 
-                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
-                               <h3 class="text-center bg-info">Ongoing</h3>
-                               <div class="hr"></div>
-                               <ul class="academic-dates-details">
-                                  
-                                  
-                                 <?php
-                                    
-                                    $query = "SELECT * FROM phd_scholar WHERE scholar_status = 'ongoing' ORDER BY scholar_id DESC ";
-                                    $select_scholar_query = mysqli_query($connection, $query);
-                                    if(!$select_scholar_query) {
-                                         die("QUERY FAILED " . mysqli_error($connection));
-                                    }
-
-                                    while($row = mysqli_fetch_assoc($select_scholar_query)) {
-
-                                        $scholar_id = $row['scholar_id'];
-                                        $scholar_name = $row['scholar_name'];
-                                        $scholar_project_title = $row['scholar_project_title'];
-                                        $scholar_contact = $row['scholar_contact'];
-                                        
-                            ?>
-                                  
-                                  
-                                  
-                                   <li style="border-left: 2px solid #03cc85; border-bottom: 2px solid #03cc85;">
-                                       <div class="scholar">
-                                           <p><span><strong>Name: </strong></span><?php echo $scholar_name; ?></p>
-                                           <p><span><strong>Project: </strong></span><?php echo $scholar_project_title; ?></p>
-                                           <p><span><strong>Email: </strong></span><?php echo $scholar_contact; ?></p>
-                                       </div>
-                                   </li>
-                                <?php   
-                                   }
-                                   
-                                   ?>
-                               </ul>
-
-                            </div>
-
-                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
                                <h3 class="text-center bg-info">Completed</h3>
                                <div class="hr"></div>
                                <ul class="academic-dates-details">

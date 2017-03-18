@@ -121,9 +121,19 @@
                             </li>
                         </ul>
                     </li>
+                    
                     <li>
-                        <a href="index.php?p_id=phdscholar" class="fsize">Ph.D Scholar</a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3" class="fsize">Ph.D Scholar <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo3" class="collapse" style="list-style-type: none;">
+                            <li style="margin-left: -15px; border: none;">
+                                <a href="index.php?p_id=phdscholar_ongoing" class="fsize" class="fsize">Ongoing</a>
+                            </li>
+                            <li style="margin-left: -15px; border: none;">
+                                <a href="index.php?p_id=phdscholar_completed" class="fsize">Completed</a>
+                            </li>
+                        </ul>
                     </li>
+                    
                     <li class="last">
                         <a href="index.php?p_id=contact" class="fsize">Contact</a>
                     </li>
@@ -158,8 +168,11 @@
                         } else if($p_id == 'teaching') {
                             include "includes/teaching.php";
                             
-                        } else if($p_id == 'phdscholar') {
-                            include "includes/phdscholar.php";
+                        } else if($p_id == 'phdscholar_ongoing') {
+                            include "includes/phdscholar_ongoing.php";
+                            
+                        } else if($p_id == 'phdscholar_completed') {
+                            include "includes/phdscholar_completed.php";
                             
                         } else if($p_id == 'events') {
                             include "includes/events.php";
@@ -251,6 +264,10 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBID9nxDyfddYo-7BZ9QAxGNQk6RYlcqmQ&callback=initMap">
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
