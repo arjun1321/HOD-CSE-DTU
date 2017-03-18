@@ -6,7 +6,7 @@
                                 <div class="page-header">
                                     <h1>Professional Activities</h1>
                                     <div class="hr"></div>
-                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo possimus perferendis, dolorem, veritatis nam officiis aliquid qui consectetur, obcaecati debitis numquam, consequuntur! Error excepturi quod saepe praesentium deserunt beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto labore, sed voluptatibus repellat dignissimos ipsum ipsam? Dignissimos numquam reiciendis ea, necessitatibus quia temporibus sapiente esse, nobis omnis sint veritatis.</p>
+                                    <p class="text-justify">He is a member of various technical and professional organisations like IEEE. <strong>He is life member of computer society of india (CSI) and indian society for technical educations (ISTE).</strong> He has established a technical society named "Society for IT Engineers" at DTU in 2010.</p>
                                 </div>
                             </div>
                         </div>

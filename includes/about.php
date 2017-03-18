@@ -17,10 +17,11 @@
                                    <h2>Bio</h2>
                                    <div class="hr"></div>
 
-                                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla unde iusto cupiditate consequatur voluptate, quaerat. Hic sed nisi amet id alias consequuntur! Perferendis, qui, placeat. Ducimus explicabo veritatis odit iste.</p>
+                                   <p class="text-justify">Currenty Prof. Verma is heading Department of Computer Science and Engineering at DTU. He has a wide administrative experience along with distinguished research activities. His current research area includes applied of computing evolutionary algorithms and many more.</p>
 
-                                   <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla unde iusto cupiditate consequatur voluptate, quaerat. Hic sed nisi amet id alias consequuntur! Perferendis, qui, placeat. Ducimus explicabo veritatis odit iste.</p>
+                                   <p class="text-justify">He has successfully completed various academic and administrative positions. He was chairman for b-tech admissions committe from 2011-14 and 2016-17. He has also successfully established campus wide area network (wires and Wi-Fi) in DTU. Addtionaly, he's member of various goverment projects and committiees. </p>
 
+                                   <p class="text-justify">Prof. Verma has organised various conferences, faculty development programme, seminar and workshop etc. Recently, he was organising chair of the India International Conference on  Imformation Processing (IICIP-2016). In 2015 he has organised faculty development programme on information security and challenges.</p>
 
                             </div>
 
@@ -39,12 +40,49 @@
                                    <li>
                                        <div class="dates">
                                            <span>Present</span>
-                                           <span>2005</span>
+                                           <span>2014</span>
                                        </div>
 
                                        <div class="content">
                                            <h4>Head of Department</h4>
-                                           <p>Computer Department, Delhi Technological University</p>
+                                           <p>Computer Science and Engineering, DTU, Delhi</p>
+                                       </div>
+                                   </li>
+                                   
+                                   <li>
+                                       <div class="dates">
+                                           <span>Present</span>
+                                           <span>2014</span>
+                                       </div>
+
+                                       <div class="content">
+                                           <h4 st>Principal Investigator</h4>
+                                           <h3 style="font-size: 15px;">Information Security Education and Awareness</h3><small>Project Phase - ll</small>
+                                           <p>Ministry of Electronics and Information Technology (MeitY) Govt. of India</p>
+                                       </div>
+                                   </li>
+                                   
+                                   <li>
+                                       <div class="dates">
+                                           <span>Present</span>
+                                           <span>2014</span>
+                                       </div>
+
+                                       <div class="content">
+                                           <h4>Head of Computer Center</h4>
+                                           <p>DTU, Delhi</p>
+                                       </div>
+                                   </li>
+                                   
+                                   <li>
+                                       <div class="dates">
+                                           <span>2014</span>
+                                           <span>2012</span>
+                                       </div>
+
+                                       <div class="content">
+                                           <h4>Dean Continuing Education</h4>
+                                           <p>DTU, Delhi</p>
                                        </div>
                                    </li>
                                    
@@ -56,31 +94,7 @@
 
                                        <div class="content">
                                            <h4>Head of Department</h4>
-                                           <p>Computer Department, Delhi Technological University</p>
-                                       </div>
-                                   </li>
-                                   
-                                   <li>
-                                       <div class="dates">
-                                           <span>Present</span>
-                                           <span>2005</span>
-                                       </div>
-
-                                       <div class="content">
-                                           <h4>Head of Department</h4>
-                                           <p>Computer Department, Delhi Technological University</p>
-                                       </div>
-                                   </li>
-                                   
-                                   <li>
-                                       <div class="dates">
-                                           <span>Present</span>
-                                           <span>2005</span>
-                                       </div>
-
-                                       <div class="content">
-                                           <h4>Head of Department</h4>
-                                           <p>Computer Department, Delhi Technological University</p>
+                                           <p>Department of Information Technology, DTU, Delhi</p>
                                        </div>
                                    </li>
                                </ul>
@@ -93,36 +107,36 @@
                                <ul class="edu-dates-details">
                                   <li>
                                       <div class="edu-dates">
-                                         <span class="degree">PHD</span>
-                                         <span class="year">1995</span>  
+                                         <span class="degree">Ph.D</span>
+                                         <span class="year">2011</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
-                                          <p class="what">Ph.D in Computer Science</p>
-                                          <p class="where">Delhi University</p>
+                                          <p class="what">Electronics and Communication Engineering</p>
+                                          <p class="where">University of Delhi, Delhi</p>
                                       </div>
                                   </li>
                                   
                                   <li>
                                       <div class="edu-dates">
-                                         <span class="degree">M-TECH</span>
-                                         <span class="year">1995</span>  
+                                         <span class="degree">M-Tech</span>
+                                         <span class="year">1996</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
-                                          <p class="what">M-Tech in Computer Science</p>
-                                          <p class="where">Indian Institute Of Technology, Delhi</p>
+                                          <p class="what">Communication and Radar Engineering</p>
+                                          <p class="where">Indian Institute of Technology, Delhi</p>
                                       </div>
                                   </li>
                                   
                                   <li>
                                       <div class="edu-dates">
                                          <span class="degree">B.E</span>
-                                         <span class="year">1995</span>  
+                                         <span class="year">1990</span>  
                                       </div>
                                       
                                       <div class="edu-contents">
-                                          <p class="what">B.E in Computer Science Engineering</p>
+                                          <p class="what">Electronics and Communication Engineering</p>
                                           <p class="where">Malaviya National Institute of Technology, Jaipur</p>
                                       </div>
                                   </li>

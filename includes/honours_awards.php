@@ -6,7 +6,7 @@
                                 <div class="page-header">
                                     <h1>Honours and Awards</h1>
                                     <div class="hr"></div>
-                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo possimus perferendis, dolorem, veritatis nam officiis aliquid qui consectetur, obcaecati debitis numquam, consequuntur! Error excepturi quod saepe praesentium deserunt beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto labore, sed voluptatibus repellat dignissimos ipsum ipsam? Dignissimos numquam reiciendis ea, necessitatibus quia temporibus sapiente esse, nobis omnis sint veritatis.</p>
+                                    <p class="text-justify">He has received many awards and recognitions in various academic and administrative activities.</p>
                                 </div>
                             </div>
                         </div>

@@ -6,7 +6,7 @@
                                 <div class="page-header">
                                     <h1>Teaching</h1>
                                     <div class="hr"></div>
-                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo possimus perferendis, dolorem, veritatis nam officiis aliquid qui consectetur, obcaecati debitis numquam, consequuntur! Error excepturi quod saepe praesentium deserunt beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto labore, sed voluptatibus repellat dignissimos ipsum ipsam? Dignissimos numquam reiciendis ea, necessitatibus quia temporibus sapiente esse, nobis omnis sint veritatis.</p>
+                                    <p class="text-justify">He started his career in 1992 from as an assistant professor in Electronics and Communication Engineering Department, Malviya National Institute of Technology, Jaipur. He left this assignment in 1998 and joined as an associate professor in ECE Department Delhi College of Engineering, Delhi and worked here till 1998. In 1998, He joined Department of Information Technology, DCE, Delhi. Currently, he is professor and head of Department of Computer Science Engineering, DTU, Delhi. </p>
                                 </div>
                             </div>
                         </div>

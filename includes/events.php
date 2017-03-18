@@ -8,7 +8,9 @@
                                 <div class="page-header">
                                     <h1>Events</h1>
                                     <div class="hr"></div>
-                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo possimus perferendis, dolorem, veritatis nam officiis aliquid qui consectetur, obcaecati debitis numquam, consequuntur! Error excepturi quod saepe praesentium deserunt beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto labore, sed voluptatibus repellat dignissimos ipsum ipsam? Dignissimos numquam reiciendis ea, necessitatibus quia temporibus sapiente esse, nobis omnis sint veritatis.</p>
+                                    <p class="text-justify">Prof. Verma has organised various conferences, faculty development programme, seminar and workshop etc. Recently, he was organising chair of the India International Conference on  Imformation Processing (IICIP-2016). In 2015 he has organised faculty development programme on information security and challenges.</p>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>

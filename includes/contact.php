@@ -15,9 +15,10 @@
                                     
                                    <li style="border-left: 2px solid #03cc85; border-bottom: 2px solid #03cc85;">
                                        <div class="scholar">
-                                           <p><span><strong>Phone: </strong></span>011-27294672</p>
-                                           <p><span><strong>Email 1: </strong></span>opverma@dce.ac.in</p>
-                                           <p><span><strong>Email 2: </strong></span>opvera.dce@gmail.com</p>
+                                           <p><i class="fa fa-address-card-o" aria-hidden="true"></i> &nbsp;&nbsp;Department of Computer Science, Delhi Technological University, Bawana Road Delhi-42</p>
+                                           <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;opvera.dce@gmail.com, opverma@dce.ac.in</p>
+                                           <p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;011-27294672</p>
+                                           
                                        </div>
                                    </li>
                                </ul>
@@ -32,9 +33,11 @@
                                           <h3>Follow Me</h3>
                                            <div class="social-media">
                                                 <ul>
-                                                    <li><a href="#" class="social"><i class="fa fa-facebook fa-2x"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/omprakash.verma.1481" class="social"><i class="fa fa-facebook fa-2x"></i></a></li>
                                                     <li><a href="#" class="social"><i class="fa fa-twitter fa-2x"></i></a></li>
-                                                    <li><a href="#" class="social"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                                    <li><a href="https://in.linkedin.com/in/dr-o-p-verma-2925b7b" class="social"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                                    <li><a href="https://scholar.google.co.in/citations?user=vJyORdgAAAAJ&hl=en&oi=ao">google scholar</a></li>
+                                                    <li><a href="">Academia</a></li>
                                                 </ul>
                                             </div>
                                        </div>
