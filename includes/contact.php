@@ -36,8 +36,8 @@
                                                     <li><a href="https://www.facebook.com/omprakash.verma.1481" class="social"><i class="fa fa-facebook fa-2x"></i></a></li>
                                                     <li><a href="#" class="social"><i class="fa fa-twitter fa-2x"></i></a></li>
                                                     <li><a href="https://in.linkedin.com/in/dr-o-p-verma-2925b7b" class="social"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                                                    <li><a href="https://scholar.google.co.in/citations?user=vJyORdgAAAAJ&hl=en&oi=ao">google scholar</a></li>
-                                                    <li><a href="">Academia</a></li>
+                                                    <li><a href="https://scholar.google.co.in/citations?user=vJyORdgAAAAJ&hl=en&oi=ao"><i class="ai ai-google-scholar ai-2x"></i></a></li>
+                                                    <li><a href=""><i class="ai ai-academia ai-2x"></i></a></li>
                                                 </ul>
                                             </div>
                                        </div>
