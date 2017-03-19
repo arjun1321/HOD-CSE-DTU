@@ -1,15 +1,3 @@
-<?php session_start();
-ob_start();
-?>
-
-<?php
-
-    if(!$_SESSION['username'] || $_SESSION['username'] == null) {
-        header("Location: ../../login.php");
-    }
-    
-    
-?>
 
 
 <h4>View Ph.D Scholar</h4>
