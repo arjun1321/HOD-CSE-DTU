@@ -2,7 +2,16 @@
       ob_start();
 ?>
 
+<?php session_start();?>
 
+<?php
+
+    if(!$_SESSION['username'] || $_SESSION['username'] == null) {
+        header("Location: ../login.php");
+    }
+    
+    
+?>
 
 
 <!DOCTYPE html>

@@ -1,3 +1,18 @@
+<?php session_start();
+ob_start();
+?>
+
+<?php
+
+    if(!$_SESSION['username'] || $_SESSION['username'] == null) {
+        header("Location: ../../login.php");
+    }
+    
+    
+?>
+
+
+
 <h4>View Administrative Activities</h4>
 <div class="table-responsive">
 <table class="table table-bordered table-hover">

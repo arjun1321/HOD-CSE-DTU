@@ -1,4 +1,19 @@
-<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+<?php session_start();
+ob_start();
+?>
+
+<?php
+
+    if(!$_SESSION['username'] || $_SESSION['username'] == null) {
+        header("Location: ../../login.php");
+    }
+    
+    
+?>
+           
+
+           
+           <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     
