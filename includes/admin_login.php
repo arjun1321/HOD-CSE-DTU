@@ -29,12 +29,11 @@
             $db_user_password = $row['password'];
 
         }
-  
         
-        if($username !== $db_username && $password !== $db_user_password) {
+        if($username !== $db_username && !password_verify($password, $db_user_password)) {
             header("Location: ../login.php");
             
-        } else if($username == $db_username && $password == $db_user_password) {
+        } else if($username == $db_username && password_verify($password, $db_user_password)) {
             
             $_SESSION['username'] = $db_username;
             echo "index";

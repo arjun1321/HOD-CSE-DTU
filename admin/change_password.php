@@ -120,7 +120,7 @@
                         
                         <div class="form-group">
                             <label for="password">Password: </label>
-                            <input type="password" value="<?php echo $db_user_password; ?>" name="password">
+                            <input type="password" value="" name="password">
                         </div>
 
                         <div class="form-group">
@@ -134,9 +134,14 @@
                                 $user_name = $_POST['username'];
                                 $user_password = $_POST['password'];
                                 
+                                $user_name = mysqli_real_escape_string($connection, $user_name);
+                                $user_password = mysqli_real_escape_string($connection, $user_password);
+                                
+                                $user_password_hash = password_hash($user_password, PASSWORD_DEFAULT);
+                                
                                 $query = "UPDATE login SET ";
                                 $query .= "username = '{$user_name}', ";
-                                $query .= "password = '{$user_password}' ";
+                                $query .= "password = '{$user_password_hash}' ";
                                 $query .= "WHERE userid = $db_userid; ";
                                 
                                 $change_password_query = mysqli_query($connection, $query);
