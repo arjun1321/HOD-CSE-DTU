@@ -22,9 +22,9 @@
     
     $query = "SELECT * FROM phd_scholar ORDER BY scholar_id DESC " ;
     $select_scholar = mysqli_query($connection, $query);
-                                
+     $serialno = 0;                           
      while($row = mysqli_fetch_assoc($select_scholar)) {
-                        
+        $serialno++;                
         $scholar_id = $row['scholar_id'];
         $scholar_name = $row['scholar_name'];
         $scholar_project_title = $row['scholar_project_title'];
@@ -32,7 +32,7 @@
         $scholar_contact = $row['scholar_contact'];
 
     echo "<tr>";
-    echo "<td>$scholar_id</td>";
+    echo "<td>$serialno</td>";
     echo "<td>$scholar_name</td>";
     echo "<td>$scholar_project_title</td>";
     echo "<td>$scholar_status</td>";

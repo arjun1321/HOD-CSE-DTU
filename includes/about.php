@@ -17,7 +17,7 @@
                                    <h2>Bio</h2>
                                    <div class="hr"></div>
 
-                                   <p class="text-justify">Currenty Prof. Verma is heading Department of Computer Science and Engineering at DTU. He has a wide administrative experience along with distinguished research activities. His current research area includes applied of computing evolutionary algorithms and many more.</p>
+                                   <p class="text-justify">Currently Prof. Verma is heading Department of Computer Science and Engineering at DTU. He has a wide administrative experience along with distinguished research activities. His current research area includes applied of computing evolutionary algorithms and many more.</p>
 
                                    <p class="text-justify">He has successfully completed various academic and administrative positions. He was chairman for b-tech admissions committe from 2011-14 and 2016-17. He has also successfully established campus wide area network (wires and Wi-Fi) in DTU. Additionaly, he is a member of various goverment projects and committies. </p>
 
@@ -56,32 +56,7 @@
                                        </div>
 
                                        <div class="content">
-                                           <h4 style="margin-bottom: 0px;">Principal Investigator</h4>
-                                           <h3 style="font-size: 15px; margin-top: 3px; margin-bottom: 0px;">Information Security Education and Awareness</h3><small>Project Phase - ll</small>
-                                           <p>Ministry of Electronics and Information Technology (MeitY) Govt. of India</p>
-                                       </div>
-                                   </li>
-                                   
-                                   <li>
-                                       <div class="dates">
-                                           <span>Present</span>
-                                           <span>2014</span>
-                                       </div>
-
-                                       <div class="content">
                                            <h4>Head of Computer Center</h4>
-                                           <p>DTU, Delhi</p>
-                                       </div>
-                                   </li>
-                                   
-                                   <li>
-                                       <div class="dates">
-                                           <span>2014</span>
-                                           <span>2012</span>
-                                       </div>
-
-                                       <div class="content">
-                                           <h4>Dean Continuing Education</h4>
                                            <p>DTU, Delhi</p>
                                        </div>
                                    </li>
@@ -97,6 +72,33 @@
                                            <p>Department of Information Technology, DTU, Delhi</p>
                                        </div>
                                    </li>
+                                   
+                                   <li>
+                                       <div class="dates">
+                                           <span>2014</span>
+                                           <span>2012</span>
+                                       </div>
+
+                                       <div class="content">
+                                           <h4>Dean Continuing Education</h4>
+                                           <p>DTU, Delhi</p>
+                                       </div>
+                                   </li>
+                                   
+                                   
+                                   
+                                    <li>
+                                       <div class="dates">
+                                           <span>Present</span>
+                                           <span>2014</span>
+                                       </div>
+
+                                       <div class="content">
+                                           <h4 style="margin-bottom: 0px;">Principal Investigator</h4>
+                                           <h3 style="font-size: 15px; margin-top: 3px; margin-bottom: 0px;">Information Security Education and Awareness <span style="font-size: 10px;">Project Phase - ll</span></h3>
+                                           <p>Ministry of Electronics and Information Technology (MeitY) Govt. of India</p>
+                                       </div>
+                                   </li>
                                </ul>
 
                             </div>
@@ -108,7 +110,7 @@
                                   <li>
                                       <div class="edu-dates">
                                          <span class="degree">Ph.D</span>
-                                         <span class="year">2011</span>  
+<!--                                         <span class="year">2011</span>  -->
                                       </div>
                                       
                                       <div class="edu-contents">
@@ -120,7 +122,7 @@
                                   <li>
                                       <div class="edu-dates">
                                          <span class="degree">M-Tech</span>
-                                         <span class="year">1996</span>  
+<!--                                         <span class="year">1996</span>  -->
                                       </div>
                                       
                                       <div class="edu-contents">
@@ -132,7 +134,7 @@
                                   <li>
                                       <div class="edu-dates">
                                          <span class="degree">B.E</span>
-                                         <span class="year">1990</span>  
+<!--                                         <span class="year">1990</span>  -->
                                       </div>
                                       
                                       <div class="edu-contents">

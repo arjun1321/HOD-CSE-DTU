@@ -26,9 +26,9 @@
     
     $query = "SELECT * FROM papers ORDER BY paper_id DESC " ;
     $select_paper = mysqli_query($connection, $query);
-                                
+     $serialno = 0;                           
      while($row = mysqli_fetch_assoc($select_paper)) {
-                        
+        $serialno++;                
         $paper_id = $row['paper_id'];
         $paper_title = $row['paper_title'];
         $paper_author = $row['paper_author'];
@@ -39,7 +39,7 @@
         $paper_abstract = $row['paper_abstract'];
 
     echo "<tr>";
-    echo "<td>$paper_id</td>";
+    echo "<td>$serialno</td>";
     echo "<td>$paper_title</td>";
     echo "<td>$paper_author</td>";
     echo "<td>$paper_journal</td>";

@@ -23,9 +23,9 @@
     
     $query = "SELECT * FROM gallery ORDER BY gallery_id DESC " ;
     $select_gallery = mysqli_query($connection, $query);
-                                
+     $serialno = 0;                           
      while($row = mysqli_fetch_assoc($select_gallery)) {
-                        
+        $serialno++;                
         $gallery_id = $row['gallery_id'];
         $gallery_title = $row['gallery_title'];
         $gallery_image = $row['gallery_image'];
@@ -34,7 +34,7 @@
         $gallery_description = $row['gallery_description'];
 
     echo "<tr>";
-    echo "<td>$gallery_id</td>";
+    echo "<td>$serialno</td>";
     echo "<td>$gallery_title</td>";
     echo "<td><img width='100' src='../image/$gallery_image' alt='image'></td>";
     echo "<td>$gallery_date</td>";

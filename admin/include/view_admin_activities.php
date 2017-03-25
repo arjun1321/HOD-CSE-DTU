@@ -21,14 +21,14 @@
     
     $query = "SELECT * FROM activities ORDER BY activity_id DESC " ;
     $select_activity = mysqli_query($connection, $query);
-                                
+    $serialno = 0;         
      while($row = mysqli_fetch_assoc($select_activity)) {
-                        
+        $serialno++;                
         $activity_id = $row['activity_id'];
         $activity_description = $row['activity_description'];
 
     echo "<tr>";
-    echo "<td>$activity_id</td>";
+    echo "<td>$serialno</td>";
     echo "<td>$activity_description</td>";
 
     echo "<td><a href='administrative_activities.php?p_id=edit_admin_activities&a_id=$activity_id'>Edit</a></td>";

@@ -34,6 +34,7 @@
                                         $scholar_name = $row['scholar_name'];
                                         $scholar_project_title = $row['scholar_project_title'];
                                         $scholar_contact = $row['scholar_contact'];
+                                        $scholar_profile_link = $row['scholar_profile_link'];
                                         
                             ?>
                                   
@@ -41,7 +42,7 @@
                                   
                                    <li style="border-left: 2px solid #03cc85; border-bottom: 2px solid #03cc85;">
                                        <div class="scholar">
-                                           <p><span><strong>Name: </strong></span><?php echo $scholar_name; ?></p>
+                                           <p><span><strong>Name: </strong></span><a href="<?php echo $scholar_profile_link; ?>" target="_blank"><?php echo $scholar_name; ?></a></p>
                                            <p><span><strong>Project: </strong></span><?php echo $scholar_project_title; ?></p>
                                            <p><span><strong>Email: </strong></span><?php echo $scholar_contact; ?></p>
                                        </div>

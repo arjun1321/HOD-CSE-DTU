@@ -20,14 +20,14 @@
     
     $query = "SELECT * FROM honours ORDER BY honours_id DESC " ;
     $select_honours = mysqli_query($connection, $query);
-                                
+     $serialno = 0;                           
      while($row = mysqli_fetch_assoc($select_honours)) {
-                        
+        $serialno++;                
         $honours_id = $row['honours_id'];
         $honours_description = $row['honours_description'];
 
     echo "<tr>";
-    echo "<td>$honours_id</td>";
+    echo "<td>$serialno</td>";
     echo "<td>$honours_description</td>";
 
     echo "<td><a href='honour_awards.php?p_id=edit_honour_awards&a_id=$honours_id'>Edit</a></td>";

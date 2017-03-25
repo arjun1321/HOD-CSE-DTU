@@ -62,8 +62,8 @@
                  
                  <div class="profile-head">
                      <h3 class="tname" style="margin-top: 5px;"><a href="index.php" class="text-muted">Dr. OP Verma</a></h3> 
-                     <p class="tname">Head, Department of Computer Science and Engineering</p>
-                     <p class="tname">Delhi Technological University, Delhi, India</p>
+                     <p class="tname">Head, Department of CSE</p>
+                     <p class="tname">DTU(DCE), Delhi, India</p>
                  </div>
                   
           </div>
