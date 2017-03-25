@@ -17,6 +17,7 @@ if(isset($_GET['a_id'])) {
         $scholar_project_title = $row['scholar_project_title'];
         $scholar_status = $row['scholar_status'];
         $scholar_contact = $row['scholar_contact'];
+        $scholar_profile_link = $row['scholar_profile_link'];
      }  
 
   
@@ -31,6 +32,7 @@ if(isset($_GET['a_id'])) {
         $phd_scholar_project_title = $_POST['phd_scholar_project_title'];
         $phd_scholar_status = $_POST['phd_scholar_status'];
         $phd_scholar_contact = $_POST['phd_scholar_contact'];
+        $phd_scholar_profile_link = $_POST['phd_scholar_profile_link'];
         
 
         $query = "UPDATE phd_scholar SET ";
@@ -38,7 +40,8 @@ if(isset($_GET['a_id'])) {
         $query .= "scholar_name = '{$phd_scholar_name}', ";
         $query .= "scholar_project_title = '{$phd_scholar_project_title}', ";
         $query .= "scholar_status = '{$phd_scholar_status}', ";
-        $query .= "scholar_contact = '{$phd_scholar_contact}' ";
+        $query .= "scholar_contact = '{$phd_scholar_contact}', ";
+        $query .= "scholar_profile_link = '{$phd_scholar_profile_link}' ";
         $query .= "WHERE scholar_id = $the_phd_scholar_id; ";
         
         $update_scholar_query = mysqli_query($connection, $query);
@@ -86,6 +89,11 @@ if(isset($_GET['a_id'])) {
     <div class="form-group">
         <label for="phd_scholar_contact">Ph.D Scholar Contact</label>
         <input type="text" value="<?php echo $scholar_contact; ?>" class="form-control" name="phd_scholar_contact">
+    </div>
+    
+    <div class="form-group">
+        <label for="phd_scholar_profile_link">Ph.D Scholar Profile Link</label>
+        <input type="text" value="<?php echo $scholar_profile_link; ?>" class="form-control" name="phd_scholar_profile_link">
     </div>
 
     <div class="form-group">

@@ -8,11 +8,12 @@
         $phd_scholar_project_title = $_POST['phd_scholar_project_title'];
         $phd_scholar_status = $_POST['phd_scholar_status'];
         $phd_scholar_contact = $_POST['phd_scholar_contact'];
+        $phd_scholar_profile_link = $_POST['phd_scholar_profile_link'];
         
 
-        $query = "INSERT INTO phd_scholar(scholar_name, scholar_project_title, scholar_status, scholar_contact) ";
+        $query = "INSERT INTO phd_scholar(scholar_name, scholar_project_title, scholar_status, scholar_contact, scholar_profile_link) ";
         
-        $query .= "VALUES('{$phd_scholar_name}', '{$phd_scholar_project_title}', '{$phd_scholar_status}', '{$phd_scholar_contact}') ";
+        $query .= "VALUES('{$phd_scholar_name}', '{$phd_scholar_project_title}', '{$phd_scholar_status}', '{$phd_scholar_contact}', '{$phd_scholar_profile_link}') ";
         
         
         $create_phd_scholar_query = mysqli_query($connection, $query);
@@ -52,6 +53,11 @@
     <div class="form-group">
         <label for="phd_scholar_contact">Ph.D Scholar Contact</label>
         <input type="text" class="form-control" name="phd_scholar_contact">
+    </div>
+    
+    <div class="form-group">
+        <label for="phd_scholar_profile_link">Ph.D Scholar Profile Link</label>
+        <input type="text" class="form-control" name="phd_scholar_profile_link">
     </div>
     
     <div class="form-group">

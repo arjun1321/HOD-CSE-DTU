@@ -86,7 +86,7 @@
     
     <div class="form-group">
         <label for="gallery_description">Gallery Description</label>
-        <input type="text" class="form-control" name="gallery_description">
+        <textarea rows="10" class="form-control" name="gallery_description"></textarea>
     </div>
     
     <div class="form-group">

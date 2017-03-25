@@ -70,7 +70,7 @@
     
     <div class="form-group">
         <label for="paper_abstract">Paper Abstract</label>
-        <input type="text" class="form-control" name="paper_abstract">
+        <textarea class="form-control" name="paper_abstract" rows="10"></textarea>
     </div>
     
     <div class="form-group">

@@ -108,7 +108,7 @@ if(isset($_GET['a_id'])) {
     
     <div class="form-group">
         <label for="paper_abstract">Paper Abstract</label>
-        <input type="text" value="<?php echo $paper_abstract; ?>" class="form-control" name="paper_abstract">
+        <textarea rows="10" class="form-control" name="paper_abstract"><?php echo $paper_abstract; ?></textarea>
     </div>
     
     <div class="form-group">
