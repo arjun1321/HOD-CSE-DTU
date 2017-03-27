@@ -37,23 +37,23 @@
 
                                         $paper_id = $row['paper_id'];
                                         $paper_title = $row['paper_title'];
-                                        $paper_author = $row['paper_author'];
-                                        $paper_journal = $row['paper_journal'];
+//                                        $paper_author = $row['paper_author'];
+//                                        $paper_journal = $row['paper_journal'];
                                         $paper_link = $row['paper_link'];
                                         $paper_type = $row['paper_type'];
-                                        $paper_date = $row['paper_date'];
+//                                        $paper_date = $row['paper_date'];
                                         $paper_abstract = $row['paper_abstract'];
-                                        $paper_volume_no = $row['paper_volume_no'];
-                                        $paper_page_no = $row['paper_page_no'];
+//                                        $paper_volume_no = $row['paper_volume_no'];
+//                                        $paper_page_no = $row['paper_page_no'];
                                         
                             ?>
                                               
                                     <div class="panel panel-info">
                                             <div class="panel-heading" role="tab" id="headingOne">
                                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="<?php echo '#'.$paper_id; ?>" aria-expanded="true" aria-controls="collapseOne" class="collapsed accordion-link">
-                                                 <p><span><?php echo $paper_author; ?>.</span> <span> &#34;<?php echo $paper_title; ?>.&#34;</span> <span> <?php echo $paper_journal; ?> <span>32</span></span>, <span>no. <?php echo $paper_volume_no; ?></span> (<strong><?php echo $paper_date; ?></strong>): <span><?php echo $paper_page_no; ?></span>.</p>
+                                                 <p style="font-size: 20px;"><?php echo $paper_title; ?></p>
                                                  
-                                                  <p class="abstract">Abstract</p>
+                                                  <p style="color: blue;">Abstract</p>
                                                
                                                 <div class="paper-link">
                                                     <a href="<?php echo $paper_link; ?>" target="_blank" class="btn btn-primary btn-sm">Paper Link</a>

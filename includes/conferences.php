@@ -38,42 +38,36 @@
 
                                         $paper_id = $row['paper_id'];
                                         $paper_title = $row['paper_title'];
-                                        $paper_author = $row['paper_author'];
-                                        $paper_journal = $row['paper_journal'];
+//                                        $paper_author = $row['paper_author'];
+//                                        $paper_journal = $row['paper_journal'];
                                         $paper_link = $row['paper_link'];
                                         $paper_type = $row['paper_type'];
-                                        $paper_date = $row['paper_date'];
+//                                        $paper_date = $row['paper_date'];
                                         $paper_abstract = $row['paper_abstract'];
                                         
                             ?>
                                               
                                     <div class="panel panel-info">
-                                            <div class="panel-heading" role="tab" id="headingTwo">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="<?php echo '#'.$paper_id; ?>" aria-expanded="true" aria-controls="collapseTwo" class="collapsed accordion-link">
-                                                 <h4 class="panel-title paper-title">
-                                                  <?php echo $paper_title; ?>
-                                                  </h4>
-                                                 <div class="paper-author"><strong><?php echo $paper_author; ?></strong></div>
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="<?php echo '#'.$paper_id; ?>" aria-expanded="true" aria-controls="collapseOne" class="collapsed accordion-link">
+                                                 <p style="font-size: 20px;"><?php echo $paper_title; ?></p>
                                                  
-                                                 <div class="paper-conference">
-                                                     <p><span>Conference</span> <span><?php echo $paper_date; ?></span> <?php echo $paper_journal; ?> 
-                                                     <p class="abstract">Abstract</span></p>
-                                                 </div>
-                                                 <div class="paper-link">
+                                                  <p style="color: blue;">Abstract</p>
+                                               
+                                                <div class="paper-link">
                                                     <a href="<?php echo $paper_link; ?>" target="_blank" class="btn btn-primary btn-sm">Paper Link</a>
                                                  </div>
                                                 </a>
                                               
                                             </div>
-                                            <div id="<?php echo $paper_id; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div id="<?php echo $paper_id; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                               <div class="panel-body">
                                                <h4 class="abstract-title">Abstract</h4>
                                                <p><?php echo $paper_abstract; ?></p>
-                                               
-                                                
+                                        
                                               </div>
                                             </div>
-                                          </div>          
+                                          </div>         
                                                
                             <?php
                
