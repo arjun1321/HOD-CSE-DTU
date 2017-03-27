@@ -13,11 +13,11 @@ if(isset($_GET['a_id'])) {
                         
         $paper_id = $row['paper_id'];
         $paper_title = $row['paper_title'];
-        $paper_author = $row['paper_author'];
-        $paper_journal = $row['paper_journal'];
+//        $paper_author = $row['paper_author'];
+//        $paper_journal = $row['paper_journal'];
         $paper_link = $row['paper_link'];
         $paper_type = $row['paper_type'];
-        $paper_date = $row['paper_date'];
+//        $paper_date = $row['paper_date'];
         $paper_abstract = $row['paper_abstract'];
      }  
 
@@ -30,22 +30,22 @@ if(isset($_GET['a_id'])) {
     if(isset($_POST['update_publication'])) {
         
         $paper_title = $_POST['paper_title'];
-        $paper_author = $_POST['paper_author'];
-        $paper_journal = $_POST['paper_journal'];
+//        $paper_author = $_POST['paper_author'];
+//        $paper_journal = $_POST['paper_journal'];
         $paper_link = $_POST['paper_link'];
         $paper_type = $_POST['paper_type'];
-        $paper_date = $_POST['paper_date'];
+//        $paper_date = $_POST['paper_date'];
         $paper_abstract = $_POST['paper_abstract'];
         
 
         $query = "UPDATE papers SET ";
         
         $query .= "paper_title = '{$paper_title}', ";
-        $query .= "paper_author = '{$paper_author}', ";
-        $query .= "paper_journal = '{$paper_journal}', ";
+//        $query .= "paper_author = '{$paper_author}', ";
+//        $query .= "paper_journal = '{$paper_journal}', ";
         $query .= "paper_link = '{$paper_link}', ";
         $query .= "paper_type = '{$paper_type}', ";
-        $query .= "paper_date = '{$paper_date}', ";
+//        $query .= "paper_date = '{$paper_date}', ";
         $query .= "paper_abstract = '{$paper_abstract}' ";
         $query .= "WHERE paper_id = $the_paper_id; ";
         
@@ -71,15 +71,19 @@ if(isset($_GET['a_id'])) {
         <input type="text" value="<?php echo $paper_title; ?>" class="form-control" name="paper_title">
     </div>
     
+<!--
     <div class="form-group">
         <label for="paper_author">Paper Author</label>
-        <input type="text" value="<?php echo $paper_author; ?>" class="form-control" name="paper_author">
+        <input type="text" value="" class="form-control" name="paper_author">
     </div>
+-->
     
+<!--
     <div class="form-group">
         <label for="paper_journal">Paper Journal</label>
-        <input type="text" value="<?php echo $paper_journal; ?>" class="form-control" name="paper_journal">
+        <input type="text" value="" class="form-control" name="paper_journal">
     </div>
+-->
     
     <div class="form-group">
         <label for="paper_link">Paper Link</label>
@@ -101,10 +105,12 @@ if(isset($_GET['a_id'])) {
         </select>
     </div>
     
+<!--
     <div class="form-group">
         <label for="paper_date">Paper Date</label>
-        <input type="text" value="<?php echo $paper_date; ?>" class="form-control" name="paper_date">
+        <input type="text" value="" class="form-control" name="paper_date">
     </div>
+-->
     
     <div class="form-group">
         <label for="paper_abstract">Paper Abstract</label>

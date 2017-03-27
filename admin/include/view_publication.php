@@ -8,11 +8,11 @@
                                 <tr>
                                     <th>Paper Id</th>
                                     <th>Paper Title</th>
-                                    <th>Paper Author</th>
-                                    <th>Paper Journal</th>
+<!--                                    <th>Paper Author</th>-->
+<!--                                    <th>Paper Journal</th>-->
                                     <th>Paper Link</th>
                                     <th>Paper Type</th>
-                                    <th>Paper Date</th>
+<!--                                    <th>Paper Date</th>-->
                                     <th>Paper Abstract</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
@@ -31,21 +31,21 @@
         $serialno++;                
         $paper_id = $row['paper_id'];
         $paper_title = $row['paper_title'];
-        $paper_author = $row['paper_author'];
-        $paper_journal = $row['paper_journal'];
+//        $paper_author = $row['paper_author'];
+//        $paper_journal = $row['paper_journal'];
         $paper_link = $row['paper_link'];
         $paper_type = $row['paper_type'];
-        $paper_date = $row['paper_date'];
+//        $paper_date = $row['paper_date'];
         $paper_abstract = $row['paper_abstract'];
 
     echo "<tr>";
     echo "<td>$serialno</td>";
     echo "<td>$paper_title</td>";
-    echo "<td>$paper_author</td>";
-    echo "<td>$paper_journal</td>";
+//    echo "<td>$paper_author</td>";
+//    echo "<td>$paper_journal</td>";
     echo "<td>$paper_link</td>";
     echo "<td>$paper_type</td>";
-    echo "<td>$paper_date</td>";
+//    echo "<td>$paper_date</td>";
     echo "<td>$paper_abstract</td>";
          
 

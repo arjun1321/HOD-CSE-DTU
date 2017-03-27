@@ -6,17 +6,17 @@
     if(isset($_POST['create_publication'])) {
         
         $paper_title = $_POST['paper_title'];
-        $paper_author = $_POST['paper_author'];
-        $paper_journal = $_POST['paper_journal'];
+//        $paper_author = $_POST['paper_author'];
+//        $paper_journal = $_POST['paper_journal'];
         $paper_link = $_POST['paper_link'];
         $paper_type = $_POST['paper_type'];
-        $paper_date = $_POST['paper_date'];
+//        $paper_date = $_POST['paper_date'];
         $paper_abstract = $_POST['paper_abstract'];
         
 
-        $query = "INSERT INTO papers(paper_title, paper_author, paper_journal, paper_link, paper_type, paper_date, paper_abstract) ";
+        $query = "INSERT INTO papers(paper_title, paper_link, paper_type, paper_abstract) ";
         
-        $query .= "VALUES('{$paper_title}', '{$paper_author}', '{$paper_journal}', '{$paper_link}', '{$paper_type}', '{$paper_date}', '{$paper_abstract}') ";
+        $query .= "VALUES('{$paper_title}', '{$paper_link}', '{$paper_type}', '{$paper_abstract}') ";
         
         
         $create_paper_query = mysqli_query($connection, $query);
@@ -41,15 +41,19 @@
         <input type="text" class="form-control" name="paper_title">
     </div>
     
+<!--
     <div class="form-group">
         <label for="paper_author">Paper Author</label>
         <input type="text" class="form-control" name="paper_author">
     </div>
+-->
     
+<!--
     <div class="form-group">
         <label for="paper_journal">Paper Journal</label>
         <input type="text" class="form-control" name="paper_journal">
     </div>
+-->
     
     <div class="form-group">
         <label for="paper_link">Paper Link</label>
@@ -63,10 +67,12 @@
         </select>
     </div>
     
+<!--
     <div class="form-group">
         <label for="paper_date">Paper Date</label>
         <input type="text" class="form-control" name="paper_date">
     </div>
+-->
     
     <div class="form-group">
         <label for="paper_abstract">Paper Abstract</label>
