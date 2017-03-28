@@ -38,7 +38,24 @@
     <h3>Add Publication</h3>
     <div class="form-group">
         <label for="paper_title">Paper Title</label>
-        <input type="text" class="form-control" name="paper_title">
+        
+        <script src="//cloud.tinymce.com/stable/tinymce.min.js?apiKey=hzw9f52mw7g42ezda87tfo462v31a3tbwh34163fsqtd6vha"></script>
+          <script>
+              tinymce.init({ selector: 'textarea#paper',
+                              height: 150,
+                              menubar: false,
+                              plugins: [
+                                'advlist autolink lists link image charmap print preview anchor',
+                                'searchreplace visualblocks code fullscreen',
+                                'insertdatetime media table contextmenu paste code'
+                              ],
+                              toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+                              content_css: '//www.tinymce.com/css/codepen.min.css'
+                           });
+        </script>
+          <textarea id="paper" name="paper_title"></textarea>
+        
+<!--        <input type="text" class="form-control" name="paper_title">-->
     </div>
     
 <!--
@@ -76,7 +93,21 @@
     
     <div class="form-group">
         <label for="paper_abstract">Paper Abstract</label>
-        <textarea class="form-control" name="paper_abstract" rows="10"></textarea>
+        <script src="//cloud.tinymce.com/stable/tinymce.min.js?apiKey=hzw9f52mw7g42ezda87tfo462v31a3tbwh34163fsqtd6vha"></script>
+          <script>
+              tinymce.init({ selector: 'textarea#paper',
+                              height: 150,
+                              menubar: false,
+                              plugins: [
+                                'advlist autolink lists link image charmap print preview anchor',
+                                'searchreplace visualblocks code fullscreen',
+                                'insertdatetime media table contextmenu paste code'
+                              ],
+                              toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+                              content_css: '//www.tinymce.com/css/codepen.min.css'
+                           });
+        </script>
+          <textarea id="paper" name="paper_abstract"></textarea>
     </div>
     
     <div class="form-group">

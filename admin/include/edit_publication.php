@@ -68,7 +68,21 @@ if(isset($_GET['a_id'])) {
     <h3>Edit Publication</h3>
     <div class="form-group">
         <label for="paper_title">Paper Title</label>
-        <input type="text" value="<?php echo $paper_title; ?>" class="form-control" name="paper_title">
+        <script src="//cloud.tinymce.com/stable/tinymce.min.js?apiKey=hzw9f52mw7g42ezda87tfo462v31a3tbwh34163fsqtd6vha"></script>
+          <script>
+              tinymce.init({ selector: 'textarea#paper',
+                              height: 150,
+                              menubar: false,
+                              plugins: [
+                                'advlist autolink lists link image charmap print preview anchor',
+                                'searchreplace visualblocks code fullscreen',
+                                'insertdatetime media table contextmenu paste code'
+                              ],
+                              toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+                              content_css: '//www.tinymce.com/css/codepen.min.css'
+                           });
+        </script>
+          <textarea id="paper" name="paper_title"><?php echo $paper_title; ?></textarea>
     </div>
     
 <!--
@@ -114,7 +128,21 @@ if(isset($_GET['a_id'])) {
     
     <div class="form-group">
         <label for="paper_abstract">Paper Abstract</label>
-        <textarea rows="10" class="form-control" name="paper_abstract"><?php echo $paper_abstract; ?></textarea>
+        <script src="//cloud.tinymce.com/stable/tinymce.min.js?apiKey=hzw9f52mw7g42ezda87tfo462v31a3tbwh34163fsqtd6vha"></script>
+          <script>
+              tinymce.init({ selector: 'textarea#paper',
+                              height: 150,
+                              menubar: false,
+                              plugins: [
+                                'advlist autolink lists link image charmap print preview anchor',
+                                'searchreplace visualblocks code fullscreen',
+                                'insertdatetime media table contextmenu paste code'
+                              ],
+                              toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+                              content_css: '//www.tinymce.com/css/codepen.min.css'
+                           });
+        </script>
+          <textarea id="paper" name="paper_abstract"><?php echo $paper_abstract; ?></textarea>
     </div>
     
     <div class="form-group">

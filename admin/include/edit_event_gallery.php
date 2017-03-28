@@ -117,7 +117,22 @@ if(isset($_GET['a_id'])) {
     
     <div class="form-group">
         <label for="gallery_description">Gallery Description</label>
-        <textarea rows="10" class="form-control" name="gallery_description"><?php echo $gallery_description; ?></textarea>
+<!--        <textarea rows="10" class="form-control" name="gallery_description"></textarea>-->
+        <script src="//cloud.tinymce.com/stable/tinymce.min.js?apiKey=hzw9f52mw7g42ezda87tfo462v31a3tbwh34163fsqtd6vha"></script>
+          <script>
+              tinymce.init({ selector: 'textarea#paper',
+                              height: 150,
+                              menubar: false,
+                              plugins: [
+                                'advlist autolink lists link image charmap print preview anchor',
+                                'searchreplace visualblocks code fullscreen',
+                                'insertdatetime media table contextmenu paste code'
+                              ],
+                              toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+                              content_css: '//www.tinymce.com/css/codepen.min.css'
+                           });
+        </script>
+          <textarea id="paper" name="gallery_description"><?php echo $gallery_description; ?></textarea>
     </div>
     
     <div class="form-group">

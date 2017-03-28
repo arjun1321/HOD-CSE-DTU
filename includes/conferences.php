@@ -63,7 +63,7 @@
                                             <div id="<?php echo $paper_id; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                               <div class="panel-body">
                                                <h4 class="abstract-title">Abstract</h4>
-                                               <p><?php echo $paper_abstract; ?></p>
+                                               <p class="text-justify"><?php echo $paper_abstract; ?></p>
                                         
                                               </div>
                                             </div>

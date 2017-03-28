@@ -51,9 +51,10 @@
                             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1" style="position: relative; padding-bottom: 40%; height: 0; overflow: hidden;">
                                 
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.977963752865!2d77.11547651472704!3d28.75007488237157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi+Technological+University!5e0!3m2!1sen!2sin!4v1490182677387" width="600" height="350" frameborder="0" style="position: absolute; top: 0; left: 0px; width: 100% !important; padding: 14px; height: 100% !important;" allowfullscreen></iframe>
+                                
+                
                             </div>
-                            
-                            
+   
                         </div>
                                 
                         
